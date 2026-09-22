@@ -19,7 +19,7 @@ The GitHub repository homepage is already set to [lechiffre.online](https://lech
 
 - **Hero** — LeChiffre as a rule-based XAUUSD method, with links to the product site, the Pine indicator, and the Telegram channel.
 - **TradingView / Pine Script** — the XAUUSD 5-minute chart: entries, session shading (including London), a Forex Factory news table, and WIN tags.
-- **Strategy Tester** — paper examples of **LeChiffreXtelegram** on a $10,000 account: 1m, 3m, 5m, 15m, 30m, and 4H, for 7 days and 30 days where a screenshot is included. No 1-hour report. PnL shown for 0.1 lot size.
+- **Strategy Tester** — paper examples of **LeChiffreXtelegram** on a $10,000 account: 1m, 3m, 5m, 15m, 30m, and 4H, for 7 days and 30 days where a screenshot is included. PnL shown for 0.1 lot size.
 - **Telegram** — the 5M signal thread, plus best-day summaries for 1M, 3M, 5M, and Fifteen+. PnL shown for 0.1 lot size.
 - **Website** — what [lechiffre.online](https://lechiffre.online/) is for.
 - **Note** — not financial advice. Paper-test figures and the channel’s example day are not an audited live record.
@@ -57,7 +57,7 @@ Images: `assets/telegram/`.
 
 ## Strategy Tester paper grid
 
-TradingView Strategy Tester output for **LeChiffreXtelegram**, paper trading, **$10,000**. Windows are the last 7 days and the last 30 days. No 1-hour row, and no 5-minute 7-day screenshot in this set. The stronger 30-day runs are 1-minute, 3-minute, 5-minute, and 15-minute. Not an audited live brokerage account. PnL shown for 0.1 lot size.
+TradingView Strategy Tester output for **LeChiffreXtelegram**, paper trading, **$10,000**. Windows are the last 7 days and the last 30 days. The 5-minute row is the 30-day report. The stronger 30-day runs are 1-minute, 3-minute, 5-minute, and 15-minute. Not an audited live brokerage account. PnL shown for 0.1 lot size.
 
 | Timeframe | Last 7 days | Last 30 days |
 | --- | --- | --- |
