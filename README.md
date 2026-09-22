@@ -57,16 +57,16 @@ Images: `assets/telegram/`.
 
 ## Strategy Tester paper grid
 
-TradingView Strategy Tester output for **LeChiffreXtelegram**, paper trading, **$10,000**. Windows are the last 7 days and the last 30 days. The 5-minute row is the 30-day report. The stronger 30-day runs are 1-minute, 3-minute, 5-minute, and 15-minute. Not an audited live brokerage account. PnL shown for 0.1 lot size.
+TradingView Strategy Tester output for **LeChiffreXtelegram**, paper trading, **$10,000**. 7-day reports in this set are 1-minute, 3-minute, and 30-minute. 5-minute, 15-minute, and 4-hour are the 30-day reports. The stronger 30-day runs are 1-minute, 3-minute, 5-minute, and 15-minute. Not an audited live brokerage account. PnL shown for 0.1 lot size.
 
 | Timeframe | Last 7 days | Last 30 days |
 | --- | --- | --- |
 | 1-minute | +$2,168.61 (+21.69%), WR 61.64% (188/305), PF 1.834, DD 2.48% | +$6,292.17 (+62.92%), WR 60.93% (613/1006), PF 1.61, DD 3.55% |
 | 3-minute | +$713.14 (+7.13%), WR 57.58% (57/99), PF 1.399, DD 4.09% | +$5,557.94 (+55.58%), WR 64.72% (233/360), PF 1.96, DD 2.84% |
 | 5-minute | Not in this set | +$3,578.92 (+35.79%), WR 65.42% (140/214), PF 1.761, DD 3.24% |
-| 15-minute | +$345.65 (+3.46%), WR 66.67% (14/21), PF 1.391, DD 4.15% | +$3,149.55 (+31.50%), WR 71.23% (52/73), PF 2.267, DD 2.77% |
+| 15-minute | Not in this set | +$3,149.55 (+31.50%), WR 71.23% (52/73), PF 2.267, DD 2.77% |
 | 30-minute | +$61.17 (+0.61%), WR 54.55% (6/11), PF 1.093, DD 5.63% | +$1,765.95 (+17.66%), WR 70.59% (24/34), PF 2.276, DD 4.84% |
-| 4-hour | +$149.87 (+1.50%), DD 2.10%. Win rate and profit factor are not printed | +$1,478.75 (+14.79%), WR 75.00% (3/4), PF 3.349, DD 8.30% |
+| 4-hour | Not in this set | +$1,478.75 (+14.79%), WR 75.00% (3/4), PF 3.349, DD 8.30% |
 
 PnL shown for 0.1 lot size.
 
