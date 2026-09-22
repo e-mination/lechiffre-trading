@@ -55,7 +55,7 @@ Open [http://127.0.0.1:8080/](http://127.0.0.1:8080/). Paths are relative, so th
 
 The site is plain HTML, CSS, and images at the repository root. [`.nojekyll`](.nojekyll) is present so GitHub Pages serves the files as-is.
 
-Enable Pages from the repository root. This environment cannot flip that setting (the token is not allowed to create the Pages site), so it is a one-time step in the GitHub UI:
+Enable Pages from the repository root:
 
 1. Repository **Settings → Pages**
 2. **Build and deployment**: Deploy from a branch
