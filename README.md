@@ -2,7 +2,7 @@
 
 Public portfolio for **Elie Minassian** ([e-mination](https://github.com/e-mination)): a rule-based **XAUUSD** method, a **Pine Script** indicator on TradingView, the **5M LeChiffre** Telegram channel, and the site [lechiffre.online](https://lechiffre.online/).
 
-This repository is the static site. It is the author’s own work — the indicator, the channel, and the website — documented with screenshots. It is not a backtest archive and it is not financial advice.
+This repository is the static site. It is the author’s own work — the indicator, the channel, and the website — documented with screenshots. The Strategy Tester images are example 30-day paper runs, not an audited live account, and this is not financial advice.
 
 ## Links
 
@@ -19,11 +19,12 @@ The GitHub repository homepage is already set to [lechiffre.online](https://lech
 
 - **Hero** — LeChiffre as a rule-based XAUUSD method, with links to the product site, the Pine indicator, and the Telegram channel.
 - **TradingView / Pine Script** — the XAUUSD 5-minute chart: entries, session shading (including London), a Forex Factory news table, and WIN tags.
+- **Strategy Tester** — two example 30-day paper runs of **LeChiffreXtelegram** on a $10,000 account. No other timeframe or period grid.
 - **Telegram** — example messages from **5M LeChiffre**: pre-entry, confirmed entry (entry / take profit / stop), the result, and the daily summary.
 - **Website** — what [lechiffre.online](https://lechiffre.online/) is for.
-- **Note** — not financial advice. Figures are one example day visible in the screenshots, not a multi-month audit.
+- **Note** — not financial advice. Paper-test figures and the channel’s example day are not an audited live record.
 
-A second page, [`gallery.html`](gallery.html), shows both screenshots larger.
+A second page, [`gallery.html`](gallery.html), shows the screenshots larger.
 
 ## Example day in the screenshots
 
@@ -40,6 +41,19 @@ One confirmed signal in the same thread:
 - Result card: **TRADE WON**, realized PnL **31.29**
 
 The chart screenshot is the same method on TradingView (Gold Spot / U.S. Dollar, 5-minute, OANDA): buy and sell entries, WIN labels, session shading, and the news table. Do not treat either image as audited performance.
+
+## Strategy Tester, 30-day paper runs
+
+Both reports are TradingView Strategy Tester output for **LeChiffreXtelegram**: last 30 days, paper trading, **$10,000** starting capital. They are example runs, not an audited live brokerage account. This page does not add other timeframes or longer windows.
+
+| | Run A | Run B |
+| --- | --- | --- |
+| Total PnL | +$3,578.92 (+35.79%) | +$3,149.55 (+31.50%) |
+| Max drawdown | 3.24% | 2.77% |
+| Win rate | 65.42% (140/214) | 71.23% (52/73) |
+| Profit factor | 1.761 | 2.267 |
+
+Screenshots: `assets/strategy-30d-a.png`, `assets/strategy-30d-b.png`.
 
 ## Preview locally
 
@@ -74,7 +88,7 @@ Do not add a `CNAME` for `lechiffre.online`. That domain already serves the meth
 index.html          Portfolio
 gallery.html        Screenshot gallery
 css/styles.css      Styles
-assets/             Chart screenshot, Telegram screenshot, favicon
+assets/             Chart, Strategy Tester, Telegram, favicon
 LICENSE             MIT, for this site’s source
 ```
 
@@ -83,6 +97,8 @@ LICENSE             MIT, for this site’s source
 | File | What it is |
 | --- | --- |
 | `assets/tradingview-indicator-xauusd.png` | LeChiffre Pine indicator on XAUUSD, 5-minute |
+| `assets/strategy-30d-a.png` | Strategy Tester run A, 30-day paper, $10k |
+| `assets/strategy-30d-b.png` | Strategy Tester run B, 30-day paper, $10k |
 | `assets/telegram-5m-lechiffre.png` | 5M LeChiffre channel: summary, pre-entry, entry, result |
 
 The images are portfolio evidence of the author’s indicator and channel. They are not stock photos.

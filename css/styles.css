@@ -381,6 +381,53 @@ h2 {
   font-size: 0.94rem;
 }
 
+.runs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+  align-items: start;
+}
+
+.run {
+  min-width: 0;
+}
+
+.run > .kicker {
+  margin-bottom: 0.7rem;
+}
+
+.run-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.85rem 1rem;
+  margin: 0.95rem 0.15rem 0.2rem;
+}
+
+.run-stats div {
+  border-top: 1px solid var(--line-soft);
+  padding-top: 0.55rem;
+}
+
+.run-stats dt {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.run-stats dd {
+  margin: 0.2rem 0 0;
+  font-variant-numeric: tabular-nums;
+  font-size: 1.05rem;
+}
+
+.run-stats dd span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
 .channel {
   display: grid;
   grid-template-columns: minmax(240px, 380px) minmax(0, 1fr);
@@ -560,6 +607,7 @@ h2 {
 @media (max-width: 900px) {
   .hero-grid,
   .channel,
+  .runs,
   .site-panel,
   .bullets,
   .facts,
