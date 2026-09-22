@@ -428,6 +428,12 @@ h2 {
   font-size: 0.88rem;
 }
 
+.lot-note {
+  margin: 0.85rem 0 0;
+  color: var(--gold-2);
+  font-size: 0.92rem;
+}
+
 .channel {
   display: grid;
   grid-template-columns: minmax(240px, 380px) minmax(0, 1fr);

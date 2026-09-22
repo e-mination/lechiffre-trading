@@ -19,8 +19,8 @@ The GitHub repository homepage is already set to [lechiffre.online](https://lech
 
 - **Hero** — LeChiffre as a rule-based XAUUSD method, with links to the product site, the Pine indicator, and the Telegram channel.
 - **TradingView / Pine Script** — the XAUUSD 5-minute chart: entries, session shading (including London), a Forex Factory news table, and WIN tags.
-- **Strategy Tester** — two example 30-day paper runs of **LeChiffreXtelegram** on a $10,000 account. No other timeframe or period grid.
-- **Telegram** — example messages from **5M LeChiffre**: pre-entry, confirmed entry (entry / take profit / stop), the result, and the daily summary.
+- **Strategy Tester** — two example 30-day paper runs of **LeChiffreXtelegram** on a $10,000 account. PnL shown for 0.1 lot size. No other timeframe or period grid.
+- **Telegram** — example messages from **5M LeChiffre**: pre-entry, confirmed entry (entry / take profit / stop), the result, and the daily summary. PnL shown for 0.1 lot size.
 - **Website** — what [lechiffre.online](https://lechiffre.online/) is for.
 - **Note** — not financial advice. Paper-test figures and the channel’s example day are not an audited live record.
 
@@ -32,13 +32,13 @@ The Telegram screenshot is from **22 September 2026**. The daily summary card on
 
 - Asset **XAUUSD**, timeframe **5**
 - **10** wins, **2** losses, **12** trades, **83.3%** win rate
-- Net PnL **414.09**
+- Net PnL **414.09**. PnL shown for 0.1 lot size.
 
 One confirmed signal in the same thread:
 
 - **BUY** XAUUSD (5), signal time **22/09/2026 06:30 GMT+3**, exit **06:40 GMT+3**
 - Entry **4344.649**, take profit **4347.778**, stop **4341.520**, risk/reward **1**
-- Result card: **TRADE WON**, realized PnL **31.29**
+- Result card: **TRADE WON**, realized PnL **31.29**. PnL shown for 0.1 lot size.
 
 The chart screenshot is the same method on TradingView (Gold Spot / U.S. Dollar, 5-minute, OANDA): buy and sell entries, WIN labels, session shading, and the news table. Do not treat either image as audited performance.
 
@@ -52,6 +52,8 @@ Both reports are TradingView Strategy Tester output for **LeChiffreXtelegram**: 
 | Max drawdown | 3.24% | 2.77% |
 | Win rate | 65.42% (140/214) | 71.23% (52/73) |
 | Profit factor | 1.761 | 2.267 |
+
+PnL shown for 0.1 lot size.
 
 Screenshots: `assets/strategy-30d-a.png`, `assets/strategy-30d-b.png`.
 
