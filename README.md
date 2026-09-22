@@ -9,7 +9,7 @@ This repository is the static site. It is the author’s own work — the indica
 | | |
 | --- | --- |
 | Method site | [https://lechiffre.online/](https://lechiffre.online/) |
-| GitHub Pages | [https://e-mination.github.io/lechiffre-tradingview-portfolio/](https://e-mination.github.io/lechiffre-tradingview-portfolio/) |
+| GitHub Pages | [https://e-mination.github.io/lechiffre-trading/](https://e-mination.github.io/lechiffre-trading/) |
 | Author | Elie Minassian · [minassianelie@gmail.com](mailto:minassianelie@gmail.com) |
 | GitHub | [github.com/e-mination](https://github.com/e-mination) |
 
@@ -49,7 +49,7 @@ From the repository root:
 python3 -m http.server 8080
 ```
 
-Open [http://127.0.0.1:8080/](http://127.0.0.1:8080/). Paths are relative, so the same files work on GitHub project Pages (`/lechiffre-tradingview-portfolio/`) without a build step.
+Open [http://127.0.0.1:8080/](http://127.0.0.1:8080/). Paths are relative, so the same files work on GitHub project Pages (`/lechiffre-trading/`) without a build step.
 
 ## GitHub Pages
 
@@ -64,7 +64,7 @@ Pages is configured to deploy from a branch:
 
 After the first deploy finishes, the site is at:
 
-**https://e-mination.github.io/lechiffre-tradingview-portfolio/**
+**https://e-mination.github.io/lechiffre-trading/**
 
 Do not add a `CNAME` for `lechiffre.online`. That domain already serves the method site. This repository is the portfolio on GitHub Pages.
 
