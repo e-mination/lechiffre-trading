@@ -13,7 +13,7 @@ This repository is the static site. It is the author’s own work — the indica
 | Author | Elie Minassian · [minassianelie@gmail.com](mailto:minassianelie@gmail.com) |
 | GitHub | [github.com/e-mination](https://github.com/e-mination) |
 
-The GitHub repository homepage is already set to [lechiffre.online](https://lechiffre.online/). The Pages URL above is this portfolio, published from the `main` branch root.
+The GitHub repository homepage is already set to [lechiffre.online](https://lechiffre.online/). The Pages link above is the address for this portfolio once GitHub Pages is enabled from the `main` branch root.
 
 ## What’s on the site
 
@@ -55,7 +55,7 @@ Open [http://127.0.0.1:8080/](http://127.0.0.1:8080/). Paths are relative, so th
 
 The site is plain HTML, CSS, and images at the repository root. [`.nojekyll`](.nojekyll) is present so GitHub Pages serves the files as-is.
 
-Pages is configured to deploy from a branch:
+Enable Pages from the repository root. This environment cannot flip that setting (the token is not allowed to create the Pages site), so it is a one-time step in the GitHub UI:
 
 1. Repository **Settings → Pages**
 2. **Build and deployment**: Deploy from a branch
