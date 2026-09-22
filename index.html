@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LeChiffre — Pine Script &amp; XAUUSD signals by Elie Minassian</title>
+    <meta
+      name="description"
+      content="Portfolio of Elie Minassian: the LeChiffre rule-based XAUUSD method, a Pine Script indicator on TradingView, the 5M LeChiffre Telegram channel, and lechiffre.online."
+    />
+    <meta name="author" content="Elie Minassian" />
+    <meta name="theme-color" content="#101410" />
+    <link rel="canonical" href="https://e-mination.github.io/lechiffre-tradingview-portfolio/" />
+    <meta property="og:title" content="LeChiffre — rule-based XAUUSD method" />
+    <meta
+      property="og:description"
+      content="Pine Script on TradingView, Telegram signals, and the site at lechiffre.online. Built by Elie Minassian."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://e-mination.github.io/lechiffre-tradingview-portfolio/" />
+    <meta property="og:image" content="assets/tradingview-indicator-xauusd.png" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;1,6..96,500&family=IBM+Plex+Mono:wght@400;500&family=Outfit:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Elie Minassian",
+        "email": "mailto:minassianelie@gmail.com",
+        "url": "https://lechiffre.online/",
+        "jobTitle": "Pine Script developer",
+        "sameAs": [
+          "https://github.com/e-mination",
+          "https://lechiffre.online/"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="top">
+      <a class="brand" href="index.html">LeChiffre</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#indicator">Indicator</a>
+        <a href="#channel">Channel</a>
+        <a href="#site">Website</a>
+        <a href="gallery.html">Gallery</a>
+        <a class="nav-cta" href="https://lechiffre.online/">lechiffre.online</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="wrap hero-grid">
+          <div>
+            <p class="kicker">Elie Minassian · Pine Script · Algorithmic trading</p>
+            <h1><span>LeChiffre</span></h1>
+            <p class="lede">
+              A rule-based method for <strong>XAUUSD</strong>. The trade is marked
+              on TradingView in Pine Script, published as Telegram signals, and
+              explained at
+              <a href="https://lechiffre.online/">lechiffre.online</a>.
+            </p>
+            <div class="actions">
+              <a class="button button-primary" href="https://lechiffre.online/">Open the method site</a>
+              <a class="button button-ghost" href="#indicator">See the indicator</a>
+              <a class="button button-ghost" href="#channel">See the channel</a>
+            </div>
+          </div>
+          <aside class="dossier" aria-label="What this page documents">
+            <p>On this page</p>
+            <ol>
+              <li><span>01</span> Pine indicator on the XAUUSD 5-minute chart</li>
+              <li><span>02</span> 5M LeChiffre — pre-entry, entry, result, daily summary</li>
+              <li><span>03</span> The public site for the rules</li>
+            </ol>
+          </aside>
+        </div>
+      </section>
+
+      <div class="wrap">
+        <dl class="facts">
+          <div>
+            <dt>Chart</dt>
+            <dd>Pine Script on TradingView</dd>
+          </div>
+          <div>
+            <dt>Signals</dt>
+            <dd>Telegram · 5M LeChiffre</dd>
+          </div>
+          <div>
+            <dt>Home</dt>
+            <dd><a href="https://lechiffre.online/">lechiffre.online</a></dd>
+          </div>
+        </dl>
+      </div>
+
+      <section id="indicator">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="index">01 — Chart</span>
+            <h2>TradingView indicator</h2>
+          </div>
+          <p class="intro">
+            The LeChiffre Pine Script runs on the gold chart. Entries, the active
+            session, nearby news, and closed wins stay on the same screen so the
+            decision is the line on the chart.
+          </p>
+          <figure class="frame">
+            <img
+              src="assets/tradingview-indicator-xauusd.png"
+              width="1407"
+              height="915"
+              alt="TradingView chart of Gold Spot versus the U.S. Dollar on the 5-minute OANDA feed. The LeChiffre Pine indicator marks buy and sell entries, WIN labels, session shading, and a Forex Factory news table."
+            />
+            <figcaption>
+              Example chart: XAUUSD, 5-minute, OANDA. Buy and sell entries, WIN
+              tags, session shading, and the news table are on the screenshot.
+              One session of the indicator, not a multi-month audit.
+            </figcaption>
+          </figure>
+          <ul class="bullets">
+            <li>
+              <h3>Entries</h3>
+              <p>BUY and SELL marks sit on price, with the trade’s levels readable against the candles.</p>
+            </li>
+            <li>
+              <h3>Session filters</h3>
+              <p>The active window is shaded — including the London session — so trades stay inside the hours the method uses.</p>
+            </li>
+            <li>
+              <h3>News awareness</h3>
+              <p>A Forex Factory table on the chart lists upcoming items. The visible rows include U.S. unemployment claims and revised consumer sentiment.</p>
+            </li>
+            <li>
+              <h3>Win tagging</h3>
+              <p>Closed winners are labeled WIN on the chart, next to the entry that produced them.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="channel">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="index">02 — Signals</span>
+            <h2>Telegram channel</h2>
+          </div>
+          <p class="intro">
+            <strong>5M LeChiffre</strong> is the XAUUSD 5-minute signal channel.
+            A message prepares the setup, the next one states the trade, a later
+            one records the result, and the daily summary closes the book.
+          </p>
+          <div class="channel">
+            <figure class="frame">
+              <img
+                src="assets/telegram-5m-lechiffre.png"
+                width="562"
+                height="947"
+                alt="Telegram channel 5M LeChiffre. The thread shows a daily summary for XAUUSD on the 5-minute timeframe, pre-entry alerts, a BUY signal with entry, take profit and stop, and a TRADE WON result."
+              />
+              <figcaption>
+                Example signals from the channel, 22 September 2026.
+                <a href="gallery.html">Open the gallery</a>
+              </figcaption>
+            </figure>
+            <div>
+              <ol class="flow">
+                <li>
+                  <span class="step">01</span>
+                  <div>
+                    <strong>Pre-entry</strong>
+                    <p>A heads-up before the setup is confirmed. This thread shows both a pre-entry buy and a pre-entry sell on XAUUSD 5-minute.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="step">02</span>
+                  <div>
+                    <strong>Entry</strong>
+                    <p>The confirmed signal names the direction and prints entry, take profit, stop, and risk/reward.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="step">03</span>
+                  <div>
+                    <strong>Result</strong>
+                    <p>The closed trade is posted on its own card. In this example the card reads TRADE WON.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="step">04</span>
+                  <div>
+                    <strong>Daily summary</strong>
+                    <p>Wins, losses, total trades, win rate, and net PnL for that day’s XAUUSD 5-minute book.</p>
+                  </div>
+                </li>
+              </ol>
+              <div class="example">
+                <h3>Read from this screenshot</h3>
+                <p>
+                  Daily summary for 22/09/2026: 10 wins, 2 losses, 12 trades,
+                  83.3% win rate, net PnL 414.09. One confirmed BUY in the same
+                  thread, signaled at 06:30 GMT+3 and closed at 06:40 GMT+3.
+                </p>
+                <dl>
+                  <div>
+                    <dt>Entry</dt>
+                    <dd>4344.649</dd>
+                  </div>
+                  <div>
+                    <dt>Take profit</dt>
+                    <dd>4347.778</dd>
+                  </div>
+                  <div>
+                    <dt>Stop</dt>
+                    <dd>4341.520</dd>
+                  </div>
+                  <div>
+                    <dt>Result</dt>
+                    <dd>TRADE WON · 31.29</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="site">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="index">03 — Site</span>
+            <h2>lechiffre.online</h2>
+          </div>
+          <div class="site-panel">
+            <div>
+              <p class="kicker">Public home of the method</p>
+              <h3>Rules, signals, and the chart in one place.</h3>
+              <p>
+                <a href="https://lechiffre.online/">https://lechiffre.online/</a>
+                is the site Elie built for the method: the rules, the signal
+                room, and the custom TradingView indicator. The GitHub profile
+                for this repository already points there.
+              </p>
+              <div class="actions">
+                <a class="button button-primary" href="https://lechiffre.online/">Visit lechiffre.online</a>
+              </div>
+            </div>
+            <ul class="site-list">
+              <li>The method, kept short enough to follow without a new indicator every week.</li>
+              <li>Signal room: pre-entry first, then a confirmed signal with instrument, direction, entry, stop, and target.</li>
+              <li>The custom LeChiffre indicator on XAUUSD, plus a TradingView setup guide.</li>
+              <li>Gold mechanics — pips, lot size, and the four sessions — and a written risk disclosure.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <aside class="note">
+      <div>
+        Not financial advice. Trading gold, futures, and foreign exchange can
+        lose money and is not suitable for every person. The wins, the win rate,
+        and the PnL figures above are what one example day and one example
+        signal show in the screenshots. They are not a multi-month audit and
+        they are not a forecast. Past results do not indicate future results.
+      </div>
+    </aside>
+
+    <footer class="site-footer">
+      <div class="foot">
+        <div>
+          Elie Minassian ·
+          <a href="mailto:minassianelie@gmail.com">minassianelie@gmail.com</a>
+          ·
+          <a href="https://github.com/e-mination">github.com/e-mination</a>
+        </div>
+        <div>Site source under the MIT License · © 2026</div>
+      </div>
+    </footer>
+  </body>
+</html>
