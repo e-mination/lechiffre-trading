@@ -78,8 +78,8 @@
             <p>On this page</p>
             <ol>
               <li><span>01</span> Pine indicator on the XAUUSD 5-minute chart</li>
-              <li><span>02</span> Two 30-day Strategy Tester paper runs</li>
-              <li><span>03</span> 5M LeChiffre — pre-entry, entry, result, daily summary</li>
+              <li><span>02</span> Strategy Tester paper grid — 7 and 30 days</li>
+              <li><span>03</span> Telegram best-day reports and the 5M signal thread</li>
               <li><span>04</span> The public site for the rules</li>
             </ol>
           </aside>
@@ -155,79 +155,137 @@
             <h2>Strategy Tester</h2>
           </div>
           <p class="intro">
-            Two example runs of <strong>LeChiffreXtelegram</strong> in TradingView’s
-            Strategy Tester. Both are the last 30 days, paper trading, on a
-            $10,000 account. PnL shown for 0.1 lot size. They are not an audited
-            live brokerage record, and they are not a grid of other timeframes
-            or longer windows.
+            Paper examples of <strong>LeChiffreXtelegram</strong> in TradingView’s
+            Strategy Tester, on a $10,000 account. Timeframes in this set are
+            1-minute, 3-minute, 5-minute, 15-minute, 30-minute, and 4-hour, for
+            the last 7 days and the last 30 days. The 5-minute row is the 30-day
+            report. The stronger 30-day results are the 1-minute, 3-minute,
+            5-minute, and 15-minute runs. PnL shown for 0.1 lot size. These are
+            not an audited live brokerage record.
           </p>
-          <div class="runs">
-            <article class="run">
-              <p class="kicker">Run A · paper · 30 days · $10k</p>
-              <figure class="frame">
-                <img
-                  src="assets/strategy-30d-a.png"
-                  width="1388"
-                  height="811"
-                  alt="TradingView Strategy Tester for LeChiffreXtelegram. Last 30 days, paper trading, 10,000 USD. Total PnL +3,578.92 USD, max drawdown 3.24 percent, profitable trades 65.42 percent, profit factor 1.761."
-                />
-                <figcaption>
-                  Example 30-day paper run. Key stats as printed on this report.
-                </figcaption>
-              </figure>
-              <dl class="run-stats">
-                <div>
-                  <dt>Total PnL</dt>
-                  <dd>+$3,578.92 <span>+35.79%</span></dd>
-                </div>
-                <div>
-                  <dt>Max drawdown</dt>
-                  <dd>3.24%</dd>
-                </div>
-                <div>
-                  <dt>Win rate</dt>
-                  <dd>65.42% <span>140/214</span></dd>
-                </div>
-                <div>
-                  <dt>Profit factor</dt>
-                  <dd>1.761</dd>
-                </div>
-              </dl>
-              <p class="lot-note">PnL shown for 0.1 lot size.</p>
-            </article>
-            <article class="run">
-              <p class="kicker">Run B · paper · 30 days · $10k</p>
-              <figure class="frame">
-                <img
-                  src="assets/strategy-30d-b.png"
-                  width="1406"
-                  height="695"
-                  alt="TradingView Strategy Tester, last 30 days on a 10,000 USD paper account. Total PnL +3,149.55 USD, max drawdown 2.77 percent, profitable trades 71.23 percent, profit factor 2.267."
-                />
-                <figcaption>
-                  Second example 30-day paper run of the same strategy name.
-                </figcaption>
-              </figure>
-              <dl class="run-stats">
-                <div>
-                  <dt>Total PnL</dt>
-                  <dd>+$3,149.55 <span>+31.50%</span></dd>
-                </div>
-                <div>
-                  <dt>Max drawdown</dt>
-                  <dd>2.77%</dd>
-                </div>
-                <div>
-                  <dt>Win rate</dt>
-                  <dd>71.23% <span>52/73</span></dd>
-                </div>
-                <div>
-                  <dt>Profit factor</dt>
-                  <dd>2.267</dd>
-                </div>
-              </dl>
-              <p class="lot-note">PnL shown for 0.1 lot size.</p>
-            </article>
+          <div class="table-scroll">
+            <table class="matrix">
+              <caption class="lot-note">PnL shown for 0.1 lot size.</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Timeframe</th>
+                  <th scope="col">Last 7 days</th>
+                  <th scope="col">Last 30 days</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1-minute</th>
+                  <td><strong>+$2,168.61</strong> <span class="muted">+21.69% · WR 61.64% (188/305) · PF 1.834 · DD 2.48%</span></td>
+                  <td><strong>+$6,292.17</strong> <span class="muted">+62.92% · WR 60.93% (613/1006) · PF 1.61 · DD 3.55%</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">3-minute</th>
+                  <td><strong>+$713.14</strong> <span class="muted">+7.13% · WR 57.58% (57/99) · PF 1.399 · DD 4.09%</span></td>
+                  <td><strong>+$5,557.94</strong> <span class="muted">+55.58% · WR 64.72% (233/360) · PF 1.96 · DD 2.84%</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">5-minute</th>
+                  <td class="empty">Not in this set</td>
+                  <td><strong>+$3,578.92</strong> <span class="muted">+35.79% · WR 65.42% (140/214) · PF 1.761 · DD 3.24%</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">15-minute</th>
+                  <td><strong>+$345.65</strong> <span class="muted">+3.46% · WR 66.67% (14/21) · PF 1.391 · DD 4.15%</span></td>
+                  <td><strong>+$3,149.55</strong> <span class="muted">+31.50% · WR 71.23% (52/73) · PF 2.267 · DD 2.77%</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">30-minute</th>
+                  <td><strong>+$61.17</strong> <span class="muted">+0.61% · WR 54.55% (6/11) · PF 1.093 · DD 5.63%</span></td>
+                  <td><strong>+$1,765.95</strong> <span class="muted">+17.66% · WR 70.59% (24/34) · PF 2.276 · DD 4.84%</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">4-hour</th>
+                  <td><strong>+$149.87</strong> <span class="muted">+1.50% · DD 2.10% · win rate and profit factor not printed</span></td>
+                  <td><strong>+$1,478.75</strong> <span class="muted">+14.79% · WR 75.00% (3/4) · PF 3.349 · DD 8.30%</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="lot-note">PnL shown for 0.1 lot size.</p>
+          <div class="shot-grid">
+            <figure>
+              <p class="kicker">1-minute · 30 days · stronger run</p>
+              <div class="frame">
+                <img src="assets/strategy/xauusd-1m-30d.png" width="1024" height="800" alt="Strategy Tester paper report, LeChiffreXtelegram, XAUUSD 1-minute, last 30 days, 10,000 USD. Total PnL +6,292.17 USD, win rate 60.93 percent, profit factor 1.61." />
+              </div>
+              <figcaption>+$6,292.17 (+62.92%), drawdown 3.55%, win rate 60.93% (613/1006), profit factor 1.61. PnL shown for 0.1 lot size.</figcaption>
+            </figure>
+            <figure>
+              <p class="kicker">3-minute · 30 days · stronger run</p>
+              <div class="frame">
+                <img src="assets/strategy/xauusd-3m-30d.png" width="1024" height="800" alt="Strategy Tester paper report, LeChiffreXtelegram, XAUUSD 3-minute, last 30 days, 10,000 USD. Total PnL +5,557.94 USD, win rate 64.72 percent, profit factor 1.96." />
+              </div>
+              <figcaption>+$5,557.94 (+55.58%), drawdown 2.84%, win rate 64.72% (233/360), profit factor 1.96. PnL shown for 0.1 lot size.</figcaption>
+            </figure>
+            <figure>
+              <p class="kicker">5-minute · 30 days · stronger run</p>
+              <div class="frame">
+                <img src="assets/strategy/xauusd-5m-30d.png" width="1024" height="800" alt="Strategy Tester paper report, LeChiffreXtelegram, XAUUSD 5-minute, last 30 days, 10,000 USD. Total PnL +3,578.92 USD, win rate 65.42 percent, profit factor 1.761." />
+              </div>
+              <figcaption>+$3,578.92 (+35.79%), drawdown 3.24%, win rate 65.42% (140/214), profit factor 1.761. PnL shown for 0.1 lot size.</figcaption>
+            </figure>
+            <figure>
+              <p class="kicker">15-minute · 30 days · stronger run</p>
+              <div class="frame">
+                <img src="assets/strategy/xauusd-15m-30d.png" width="1024" height="800" alt="Strategy Tester paper report, LeChiffreXtelegram, XAUUSD 15-minute, last 30 days, 10,000 USD. Total PnL +3,149.55 USD, win rate 71.23 percent, profit factor 2.267." />
+              </div>
+              <figcaption>+$3,149.55 (+31.50%), drawdown 2.77%, win rate 71.23% (52/73), profit factor 2.267. PnL shown for 0.1 lot size.</figcaption>
+            </figure>
+            <figure>
+              <p class="kicker">30-minute · 30 days</p>
+              <div class="frame">
+                <img src="assets/strategy/xauusd-30m-30d.png" width="1024" height="800" alt="Strategy Tester paper report, LeChiffreXtelegram, XAUUSD 30-minute, last 30 days. Total PnL +1,765.95 USD, win rate 70.59 percent, profit factor 2.276." />
+              </div>
+              <figcaption>+$1,765.95 (+17.66%), drawdown 4.84%, win rate 70.59% (24/34), profit factor 2.276. PnL shown for 0.1 lot size.</figcaption>
+            </figure>
+            <figure>
+              <p class="kicker">4-hour · 30 days</p>
+              <div class="frame">
+                <img src="assets/strategy/xauusd-4h-30d.png" width="1024" height="800" alt="Strategy Tester paper report, LeChiffreXtelegram, XAUUSD 4-hour, last 30 days. Total PnL +1,478.75 USD, win rate 75 percent, profit factor 3.349." />
+              </div>
+              <figcaption>+$1,478.75 (+14.79%), drawdown 8.30%, win rate 75.00% (3/4), profit factor 3.349. PnL shown for 0.1 lot size.</figcaption>
+            </figure>
+            <figure>
+              <p class="kicker">1-minute · 7 days</p>
+              <div class="frame">
+                <img src="assets/strategy/xauusd-1m-7d.png" width="1024" height="800" alt="Strategy Tester paper report, LeChiffreXtelegram, XAUUSD 1-minute, last 7 days. Total PnL +2,168.61 USD, win rate 61.64 percent, profit factor 1.834." />
+              </div>
+              <figcaption>+$2,168.61 (+21.69%), drawdown 2.48%, win rate 61.64% (188/305), profit factor 1.834. PnL shown for 0.1 lot size.</figcaption>
+            </figure>
+            <figure>
+              <p class="kicker">3-minute · 7 days</p>
+              <div class="frame">
+                <img src="assets/strategy/xauusd-3m-7d.png" width="1024" height="800" alt="Strategy Tester paper report, LeChiffreXtelegram, XAUUSD 3-minute, last 7 days. Total PnL +713.14 USD, win rate 57.58 percent, profit factor 1.399." />
+              </div>
+              <figcaption>+$713.14 (+7.13%), drawdown 4.09%, win rate 57.58% (57/99), profit factor 1.399. PnL shown for 0.1 lot size.</figcaption>
+            </figure>
+            <figure>
+              <p class="kicker">15-minute · 7 days</p>
+              <div class="frame">
+                <img src="assets/strategy/xauusd-15m-7d.png" width="1024" height="800" alt="Strategy Tester paper report, LeChiffreXtelegram, XAUUSD 15-minute, last 7 days. Total PnL +345.65 USD, win rate 66.67 percent, profit factor 1.391." />
+              </div>
+              <figcaption>+$345.65 (+3.46%), drawdown 4.15%, win rate 66.67% (14/21), profit factor 1.391. PnL shown for 0.1 lot size.</figcaption>
+            </figure>
+            <figure>
+              <p class="kicker">30-minute · 7 days</p>
+              <div class="frame">
+                <img src="assets/strategy/xauusd-30m-7d.png" width="1024" height="800" alt="Strategy Tester paper report, LeChiffreXtelegram, XAUUSD 30-minute, last 7 days. Total PnL +61.17 USD, win rate 54.55 percent, profit factor 1.093." />
+              </div>
+              <figcaption>+$61.17 (+0.61%), drawdown 5.63%, win rate 54.55% (6/11), profit factor 1.093. PnL shown for 0.1 lot size.</figcaption>
+            </figure>
+            <figure>
+              <p class="kicker">4-hour · 7 days</p>
+              <div class="frame">
+                <img src="assets/strategy/xauusd-4h-7d.png" width="1024" height="800" alt="Strategy Tester paper report, LeChiffreXtelegram, XAUUSD 4-hour, last 7 days. Total PnL +149.87 USD, max drawdown 2.10 percent. Win rate and profit factor are not printed." />
+              </div>
+              <figcaption>+$149.87 (+1.50%), drawdown 2.10%. Win rate and profit factor are blank on this report. PnL shown for 0.1 lot size.</figcaption>
+            </figure>
           </div>
         </div>
       </section>
@@ -318,6 +376,62 @@
               </div>
             </div>
           </div>
+
+          <h3 class="subhead">Best day reports</h3>
+          <p class="intro">
+            Positive daily summaries from the LeChiffre Telegram channels.
+            Each card is one example day. PnL shown for 0.1 lot size.
+          </p>
+          <div class="day-grid">
+            <article class="day-card">
+              <p class="kicker">1M LeChiffre · 21/09/2026</p>
+              <figure class="frame">
+                <img src="assets/telegram/1m-daily-best.png" width="370" height="205" alt="Telegram daily summary for 1M LeChiffre, XAUUSD 1-minute, 21 September 2026. Win rate 65.5 percent, net PnL 414.08." />
+                <figcaption>36 wins, 19 losses, 55 trades. PnL shown for 0.1 lot size.</figcaption>
+              </figure>
+              <dl class="run-stats">
+                <div><dt>Win rate</dt><dd>65.5%</dd></div>
+                <div><dt>Net PnL</dt><dd>414.08</dd></div>
+              </dl>
+              <p class="lot-note">PnL shown for 0.1 lot size.</p>
+            </article>
+            <article class="day-card">
+              <p class="kicker">3M LeChiffre · 18/09/2026</p>
+              <figure class="frame">
+                <img src="assets/telegram/3m-daily-best.png" width="370" height="195" alt="Telegram daily summary for 3M LeChiffre, XAUUSD 3-minute, 18 September 2026. Win rate 66.7 percent, net PnL 63.02." />
+                <figcaption>10 wins, 5 losses, 15 trades. PnL shown for 0.1 lot size.</figcaption>
+              </figure>
+              <dl class="run-stats">
+                <div><dt>Win rate</dt><dd>66.7%</dd></div>
+                <div><dt>Net PnL</dt><dd>63.02</dd></div>
+              </dl>
+              <p class="lot-note">PnL shown for 0.1 lot size.</p>
+            </article>
+            <article class="day-card">
+              <p class="kicker">5M LeChiffre · 21/09/2026</p>
+              <figure class="frame">
+                <img src="assets/telegram/5m-daily-best.png" width="370" height="195" alt="Telegram daily summary for 5M LeChiffre, XAUUSD 5-minute, 21 September 2026. Win rate 66.7 percent, net PnL 143.03." />
+                <figcaption>8 wins, 4 losses, 12 trades. PnL shown for 0.1 lot size.</figcaption>
+              </figure>
+              <dl class="run-stats">
+                <div><dt>Win rate</dt><dd>66.7%</dd></div>
+                <div><dt>Net PnL</dt><dd>143.03</dd></div>
+              </dl>
+              <p class="lot-note">PnL shown for 0.1 lot size.</p>
+            </article>
+            <article class="day-card">
+              <p class="kicker">Fifteen+ LeChiffre · 21/09/2026</p>
+              <figure class="frame">
+                <img src="assets/telegram/fifteen-daily-best.png" width="370" height="195" alt="Telegram daily summary for Fifteen+ LeChiffre, XAUUSD 15-minute, 21 September 2026. Win rate 100 percent, net PnL 403.12." />
+                <figcaption>4 wins, 0 losses, 4 trades. PnL shown for 0.1 lot size.</figcaption>
+              </figure>
+              <dl class="run-stats">
+                <div><dt>Win rate</dt><dd>100%</dd></div>
+                <div><dt>Net PnL</dt><dd>403.12</dd></div>
+              </dl>
+              <p class="lot-note">PnL shown for 0.1 lot size.</p>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -356,10 +470,10 @@
       <div>
         Not financial advice. Trading gold, futures, and foreign exchange can
         lose money and is not suitable for every person. The Strategy Tester
-        cards are two example 30-day paper runs of LeChiffreXtelegram on a
-        $10,000 account. The channel figures are one example day. None of this
-        is an audited live brokerage record, a longer performance grid, or a
-        forecast. PnL shown for 0.1 lot size. Past results do not indicate
+        grid is paper output for LeChiffreXtelegram on a $10,000 account, for
+        the 7-day and 30-day windows in the screenshots. The Telegram cards are
+        example days, including the best-day summaries shown above. None of this
+        is an audited live brokerage record or a forecast. PnL shown for 0.1 lot size. Past results do not indicate
         future results.
       </div>
     </aside>

@@ -346,6 +346,8 @@ h2 {
 }
 
 .frame figcaption,
+.shot-grid figcaption,
+.day-card figcaption,
 .caption {
   margin: 0.7rem 0.15rem 0.2rem;
   color: var(--muted);
@@ -432,6 +434,84 @@ h2 {
   margin: 0.85rem 0 0;
   color: var(--gold-2);
   font-size: 0.92rem;
+}
+
+.day-grid,
+.shot-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+  margin-top: 1.4rem;
+}
+
+.day-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.day-card {
+  min-width: 0;
+}
+
+.subhead {
+  margin: 2.2rem 0 0.4rem;
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  letter-spacing: -0.03em;
+}
+
+.table-scroll {
+  overflow-x: auto;
+  margin-top: 1rem;
+  border-top: 1px solid var(--line);
+}
+
+.matrix {
+  width: 100%;
+  border-collapse: collapse;
+  font-variant-numeric: tabular-nums;
+  font-size: 0.92rem;
+}
+
+.matrix th,
+.matrix td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.75rem 0.7rem;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.matrix caption {
+  caption-side: bottom;
+  text-align: left;
+  padding-top: 0.75rem;
+}
+
+.matrix th {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.matrix td strong {
+  display: block;
+  font-weight: 500;
+}
+
+.matrix .muted {
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.matrix .empty {
+  color: var(--muted);
+}
+
+.shot-grid .kicker {
+  margin-bottom: 0.45rem;
 }
 
 .channel {
@@ -614,6 +694,7 @@ h2 {
   .hero-grid,
   .channel,
   .runs,
+  .shot-grid,
   .site-panel,
   .bullets,
   .facts,
@@ -631,6 +712,10 @@ h2 {
     gap: 0.3rem;
   }
 
+  .day-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
   h1 {
     font-size: clamp(3.6rem, 20vw, 5.5rem);
   }
@@ -638,6 +723,11 @@ h2 {
 
 @media (max-width: 640px) {
   .example dl {
+    grid-template-columns: 1fr;
+  }
+
+  .day-grid,
+  .shot-grid {
     grid-template-columns: 1fr;
   }
 

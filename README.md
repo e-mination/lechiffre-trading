@@ -19,8 +19,8 @@ The GitHub repository homepage is already set to [lechiffre.online](https://lech
 
 - **Hero** — LeChiffre as a rule-based XAUUSD method, with links to the product site, the Pine indicator, and the Telegram channel.
 - **TradingView / Pine Script** — the XAUUSD 5-minute chart: entries, session shading (including London), a Forex Factory news table, and WIN tags.
-- **Strategy Tester** — two example 30-day paper runs of **LeChiffreXtelegram** on a $10,000 account. PnL shown for 0.1 lot size. No other timeframe or period grid.
-- **Telegram** — example messages from **5M LeChiffre**: pre-entry, confirmed entry (entry / take profit / stop), the result, and the daily summary. PnL shown for 0.1 lot size.
+- **Strategy Tester** — paper examples of **LeChiffreXtelegram** on a $10,000 account: 1m, 3m, 5m, 15m, 30m, and 4H, for 7 days and 30 days where a screenshot is included. No 1-hour report. PnL shown for 0.1 lot size.
+- **Telegram** — the 5M signal thread, plus best-day summaries for 1M, 3M, 5M, and Fifteen+. PnL shown for 0.1 lot size.
 - **Website** — what [lechiffre.online](https://lechiffre.online/) is for.
 - **Note** — not financial advice. Paper-test figures and the channel’s example day are not an audited live record.
 
@@ -42,20 +42,35 @@ One confirmed signal in the same thread:
 
 The chart screenshot is the same method on TradingView (Gold Spot / U.S. Dollar, 5-minute, OANDA): buy and sell entries, WIN labels, session shading, and the news table. Do not treat either image as audited performance.
 
-## Strategy Tester, 30-day paper runs
+## Telegram best-day reports
 
-Both reports are TradingView Strategy Tester output for **LeChiffreXtelegram**: last 30 days, paper trading, **$10,000** starting capital. They are example runs, not an audited live brokerage account. This page does not add other timeframes or longer windows.
+Positive example days only. Net PnL is for a **0.1 lot**. PnL shown for 0.1 lot size.
 
-| | Run A | Run B |
+| Channel | Date | Win rate | Net PnL |
+| --- | --- | --- | --- |
+| 1M LeChiffre | 21/09/2026 | 65.5% (36 wins, 19 losses) | 414.08 |
+| 3M LeChiffre | 18/09/2026 | 66.7% (10 wins, 5 losses) | 63.02 |
+| 5M LeChiffre | 21/09/2026 | 66.7% (8 wins, 4 losses) | 143.03 |
+| Fifteen+ LeChiffre | 21/09/2026 | 100% (4 wins, 0 losses) | 403.12 |
+
+Images: `assets/telegram/`.
+
+## Strategy Tester paper grid
+
+TradingView Strategy Tester output for **LeChiffreXtelegram**, paper trading, **$10,000**. Windows are the last 7 days and the last 30 days. No 1-hour row, and no 5-minute 7-day screenshot in this set. The stronger 30-day runs are 1-minute, 3-minute, 5-minute, and 15-minute. Not an audited live brokerage account. PnL shown for 0.1 lot size.
+
+| Timeframe | Last 7 days | Last 30 days |
 | --- | --- | --- |
-| Total PnL | +$3,578.92 (+35.79%) | +$3,149.55 (+31.50%) |
-| Max drawdown | 3.24% | 2.77% |
-| Win rate | 65.42% (140/214) | 71.23% (52/73) |
-| Profit factor | 1.761 | 2.267 |
+| 1-minute | +$2,168.61 (+21.69%), WR 61.64% (188/305), PF 1.834, DD 2.48% | +$6,292.17 (+62.92%), WR 60.93% (613/1006), PF 1.61, DD 3.55% |
+| 3-minute | +$713.14 (+7.13%), WR 57.58% (57/99), PF 1.399, DD 4.09% | +$5,557.94 (+55.58%), WR 64.72% (233/360), PF 1.96, DD 2.84% |
+| 5-minute | Not in this set | +$3,578.92 (+35.79%), WR 65.42% (140/214), PF 1.761, DD 3.24% |
+| 15-minute | +$345.65 (+3.46%), WR 66.67% (14/21), PF 1.391, DD 4.15% | +$3,149.55 (+31.50%), WR 71.23% (52/73), PF 2.267, DD 2.77% |
+| 30-minute | +$61.17 (+0.61%), WR 54.55% (6/11), PF 1.093, DD 5.63% | +$1,765.95 (+17.66%), WR 70.59% (24/34), PF 2.276, DD 4.84% |
+| 4-hour | +$149.87 (+1.50%), DD 2.10%. Win rate and profit factor are not printed | +$1,478.75 (+14.79%), WR 75.00% (3/4), PF 3.349, DD 8.30% |
 
 PnL shown for 0.1 lot size.
 
-Screenshots: `assets/strategy-30d-a.png`, `assets/strategy-30d-b.png`.
+Screenshots: `assets/strategy/`.
 
 ## Preview locally
 
@@ -90,7 +105,9 @@ Do not add a `CNAME` for `lechiffre.online`. That domain already serves the meth
 index.html          Portfolio
 gallery.html        Screenshot gallery
 css/styles.css      Styles
-assets/             Chart, Strategy Tester, Telegram, favicon
+assets/             Chart, Strategy Tester grid, Telegram, favicon
+assets/telegram/    Best-day channel summaries
+assets/strategy/    Strategy Tester paper screenshots
 LICENSE             MIT, for this site’s source
 ```
 
@@ -99,9 +116,11 @@ LICENSE             MIT, for this site’s source
 | File | What it is |
 | --- | --- |
 | `assets/tradingview-indicator-xauusd.png` | LeChiffre Pine indicator on XAUUSD, 5-minute |
-| `assets/strategy-30d-a.png` | Strategy Tester run A, 30-day paper, $10k |
-| `assets/strategy-30d-b.png` | Strategy Tester run B, 30-day paper, $10k |
-| `assets/telegram-5m-lechiffre.png` | 5M LeChiffre channel: summary, pre-entry, entry, result |
+| `assets/strategy/` | Strategy Tester paper grid, 7-day and 30-day |
+| `assets/strategy-30d-a.png` | Earlier crop of the 5-minute 30-day paper report |
+| `assets/strategy-30d-b.png` | Earlier crop of the 15-minute 30-day paper report |
+| `assets/telegram/` | Best-day summaries: 1M, 3M, 5M, Fifteen+ |
+| `assets/telegram-5m-lechiffre.png` | 5M LeChiffre thread: pre-entry, entry, result, one daily summary |
 
 The images are portfolio evidence of the author’s indicator and channel. They are not stock photos.
 
