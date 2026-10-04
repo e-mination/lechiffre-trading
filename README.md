@@ -15,11 +15,11 @@ This repository is a showcase. It keeps the earlier Pine chart, Strategy Tester 
 | Method site | [https://lechiffre.online/](https://lechiffre.online/) |
 | Web app | [https://lechiffre-signals.lechiffre.workers.dev/app/](https://lechiffre-signals.lechiffre.workers.dev/app/) |
 | Telegram bot | [https://t.me/LeChiffreOfficialBot](https://t.me/LeChiffreOfficialBot) |
-| GitHub Pages | [https://e-mination.github.io/lechiffre-trading/](https://e-mination.github.io/lechiffre-trading/) |
+| Live portfolio | [https://e-mination.github.io/lechiffre-trading/](https://e-mination.github.io/lechiffre-trading/) |
 | Support | [support@lechiffre.online](mailto:support@lechiffre.online) |
 | Author | Elie Minassian · [github.com/e-mination](https://github.com/e-mination) |
 
-The GitHub repository homepage is [lechiffre.online](https://lechiffre.online/). The Pages link is this portfolio, published from the `main` branch root. Do not add a `CNAME` for `lechiffre.online`. That domain already serves the method site.
+The repository homepage is [lechiffre.online](https://lechiffre.online/), the method site. The live portfolio is the link above. Do not add a `CNAME` for `lechiffre.online`. That domain already serves the method site.
 
 ## How a signal moves
 
@@ -178,18 +178,13 @@ From the repository root:
 python3 -m http.server 8080
 ```
 
-Open [http://127.0.0.1:8080/](http://127.0.0.1:8080/). Paths are relative, so the same files work on GitHub project Pages (`/lechiffre-trading/`) without a build step.
+Open [http://127.0.0.1:8080/](http://127.0.0.1:8080/). Paths are relative, so the local preview matches the live portfolio.
 
-## GitHub Pages
+## Live portfolio
 
-The site is plain HTML, CSS, and images at the repository root. [`.nojekyll`](.nojekyll) is present so GitHub Pages serves the files as-is.
+**Live portfolio:** [https://e-mination.github.io/lechiffre-trading/](https://e-mination.github.io/lechiffre-trading/)
 
-1. Repository **Settings → Pages**
-2. **Build and deployment**: Deploy from a branch
-3. Branch: **`main`**, folder: **`/ (root)`**
-4. Save
-
-After the first deploy finishes, the site is at **https://e-mination.github.io/lechiffre-trading/**
+Plain HTML, CSS, and images at the repository root. [`.nojekyll`](.nojekyll) is present so the files are served as they are. The method site stays at [lechiffre.online](https://lechiffre.online/).
 
 ## Repository layout
 
