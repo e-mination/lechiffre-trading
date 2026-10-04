@@ -3,118 +3,197 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>LeChiffre — Pine Script &amp; XAUUSD signals by Elie Minassian</title>
+    <title>LeChiffre — XAUUSD method, website, app, and Telegram</title>
     <meta
       name="description"
-      content="Portfolio of Elie Minassian: the LeChiffre rule-based XAUUSD method, a Pine Script indicator on TradingView, the 5M LeChiffre Telegram channel, and lechiffre.online."
+      content="Public portfolio of Elie Minassian: LeChiffre, a rules-based XAUUSD method. Pine Script on TradingView, lechiffre.online, the Android app, and the Telegram bot."
     />
     <meta name="author" content="Elie Minassian" />
-    <meta name="theme-color" content="#101410" />
+    <meta name="theme-color" content="#F9F8F5" />
     <link rel="canonical" href="https://e-mination.github.io/lechiffre-trading/" />
-    <meta property="og:title" content="LeChiffre — rule-based XAUUSD method" />
+    <meta property="og:title" content="LeChiffre never blinks." />
     <meta
       property="og:description"
-      content="Pine Script on TradingView, Telegram signals, and the site at lechiffre.online. Built by Elie Minassian."
+      content="Rules-based XAUUSD method by Elie Minassian. Website, Android app, and Telegram bot. P/L quoted on a 0.1 lot."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://e-mination.github.io/lechiffre-trading/" />
-    <meta property="og:image" content="https://e-mination.github.io/lechiffre-trading/assets/tradingview-indicator-xauusd.png" />
+    <meta property="og:image" content="https://e-mination.github.io/lechiffre-trading/assets/showcase/og.jpg" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;1,6..96,500&family=IBM+Plex+Mono:wght@400;500&family=Outfit:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="css/styles.css" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Elie Minassian",
-        "email": "mailto:minassianelie@gmail.com",
-        "url": "https://lechiffre.online/",
-        "jobTitle": "Pine Script developer",
-        "sameAs": [
-          "https://github.com/e-mination",
-          "https://lechiffre.online/"
-        ]
+        "@type": "WebSite",
+        "name": "LeChiffre portfolio",
+        "url": "https://e-mination.github.io/lechiffre-trading/",
+        "description": "Public portfolio of the LeChiffre XAUUSD method: website, Android app, and Telegram bot.",
+        "author": {
+          "@type": "Person",
+          "name": "Elie Minassian",
+          "url": "https://github.com/e-mination"
+        }
       }
     </script>
   </head>
   <body>
     <a class="skip" href="#main">Skip to content</a>
     <header class="top">
-      <a class="brand" href="index.html">LeChiffre</a>
-      <nav class="nav" aria-label="Primary">
-        <a href="#indicator">Indicator</a>
-        <a href="#tester">Tester</a>
-        <a href="#channel">Channel</a>
-        <a href="#site">Website</a>
-        <a href="gallery.html">Gallery</a>
-        <a class="nav-cta" href="https://lechiffre.online/">lechiffre.online</a>
-      </nav>
+      <div class="wrap">
+        <div class="top-row">
+          <a class="brand" href="index.html"><span class="mark" aria-hidden="true"></span>LeChiffre</a>
+          <a class="btn small" href="https://lechiffre.online/">Open site</a>
+        </div>
+        <nav class="nav" aria-label="Primary">
+          <a href="#story"><span class="n">01</span>Story</a>
+          <a href="#method"><span class="n">02</span>Method</a>
+          <a href="#website"><span class="n">03</span>Website</a>
+          <a href="#app"><span class="n">04</span>App</a>
+          <a href="#telegram"><span class="n">05</span>Telegram</a>
+          <a href="#record"><span class="n">06</span>Record</a>
+          <a href="#build"><span class="n">07</span>Build</a>
+          <a href="gallery.html">Gallery</a>
+        </nav>
+      </div>
     </header>
+
+    <p class="tape">
+      XAUUSD<i></i>1M<i></i>3M<i></i>5M<i></i>15M<i></i>30M<i></i>1H<i></i>4H<i></i>P/L on a 0.1 lot
+    </p>
 
     <main id="main">
       <section class="hero">
-        <div class="wrap hero-grid">
-          <div>
-            <p class="kicker">Elie Minassian · Pine Script · Algorithmic trading</p>
-            <h1><span>LeChiffre</span></h1>
-            <p class="lede">
-              A rule-based method for <strong>XAUUSD</strong>. The trade is marked
-              on TradingView in Pine Script, published as Telegram signals, and
-              explained at
-              <a href="https://lechiffre.online/">lechiffre.online</a>.
-            </p>
-            <div class="actions">
-              <a class="button button-primary" href="https://lechiffre.online/">Open the method site</a>
-              <a class="button button-ghost" href="#indicator">See the indicator</a>
-              <a class="button button-ghost" href="#channel">See the channel</a>
-            </div>
+        <div class="wrap">
+          <p class="kicker">Elie Minassian — public portfolio</p>
+          <h1>LeChiffre<span class="red">Never blinks!</span></h1>
+          <p class="lede">
+            A rules-based method for <strong>XAUUSD</strong> gold. The trade is drawn
+            in Pine Script on TradingView, published as signals, and carried by
+            three products: the website, the Android app, and the Telegram bot.
+          </p>
+          <div class="actions">
+            <a class="btn" href="https://lechiffre.online/">lechiffre.online</a>
+            <a class="btn ghost" href="https://lechiffre-signals.lechiffre.workers.dev/app/">Open the app</a>
+            <a class="btn ghost" href="https://t.me/LeChiffreOfficialBot">Telegram bot</a>
           </div>
-          <aside class="dossier" aria-label="What this page documents">
-            <p>On this page</p>
-            <ol>
-              <li><span>01</span> Pine indicator on the XAUUSD 5-minute chart</li>
-              <li><span>02</span> Strategy Tester paper grid — 7 and 30 days</li>
-              <li><span>03</span> Telegram best-day reports and the 5M signal thread</li>
-              <li><span>04</span> The public site for the rules</li>
-            </ol>
-          </aside>
         </div>
       </section>
 
       <div class="wrap">
-        <dl class="facts">
-          <div>
-            <dt>Chart</dt>
-            <dd>Pine Script on TradingView</dd>
-          </div>
-          <div>
-            <dt>Signals</dt>
-            <dd>Telegram · 5M LeChiffre</dd>
-          </div>
-          <div>
-            <dt>Home</dt>
-            <dd><a href="https://lechiffre.online/">lechiffre.online</a></dd>
-          </div>
-        </dl>
+        <ul class="jump">
+          <li>
+            <a href="#website">
+              <span class="n">03</span>
+              <strong>Website</strong>
+              <small>EN / FR · Hostinger</small>
+            </a>
+          </li>
+          <li>
+            <a href="#app">
+              <span class="n">04</span>
+              <strong>Android app</strong>
+              <small>v1.0.6 · closed testing</small>
+            </a>
+          </li>
+          <li>
+            <a href="#telegram">
+              <span class="n">05</span>
+              <strong>Telegram</strong>
+              <small>@LeChiffreOfficialBot</small>
+            </a>
+          </li>
+        </ul>
       </div>
 
-      <section id="indicator">
+      <section id="story">
         <div class="wrap">
-          <div class="section-head">
-            <span class="index">01 — Chart</span>
-            <h2>TradingView indicator</h2>
+          <p class="label"><span class="num">01</span> — Story</p>
+          <h2>One method. Three doors.</h2>
+          <div class="split">
+            <div class="prose">
+              <p>
+                LeChiffre is Elie Minassian’s rules-based XAUUSD method. The chart
+                is Heikin Ashi. Fills are marked at the real price, so the picture
+                on the screen and the fill in the trade are not the same number
+                dressed up as each other.
+              </p>
+              <p>
+                Signals run on <strong>1M, 3M, 5M, 15M, 30M, 1H, and 4H</strong>.
+                They are posted to Telegram channels for <strong>1M</strong>,
+                <strong>3M</strong>, <strong>5M</strong>, and
+                <strong>Fifteen+ LeChiffre</strong> — the Fifteen+ channel covers
+                <strong>15M, 30M, and 4H</strong>.
+              </p>
+              <p>
+                Membership is paid monthly or annually. Every P/L figure on this
+                page, on the website, in the app, and in the channel cards is
+                quoted on a <strong>0.1 lot</strong>. Past performance does not
+                guarantee future results. This is not financial advice.
+              </p>
+            </div>
+            <dl class="facts">
+              <div>
+                <dt>Chart</dt>
+                <dd>Pine Script · Heikin Ashi</dd>
+              </div>
+              <div>
+                <dt>Market</dt>
+                <dd>XAUUSD gold</dd>
+              </div>
+              <div>
+                <dt>Fills</dt>
+                <dd>At the real price</dd>
+              </div>
+              <div>
+                <dt>Timeframes</dt>
+                <dd>1M through 4H</dd>
+              </div>
+              <div>
+                <dt>Channels</dt>
+                <dd>1M · 3M · 5M · Fifteen+</dd>
+              </div>
+              <div>
+                <dt>Lot on every P/L</dt>
+                <dd>0.1 lot</dd>
+              </div>
+            </dl>
           </div>
+        </div>
+      </section>
+
+      <section id="method">
+        <div class="wrap">
+          <p class="label"><span class="num">02</span> — Method</p>
+          <h2>The chart draws the trade.</h2>
           <p class="intro">
-            The LeChiffre Pine Script runs on the gold chart. Entries, the active
-            session, nearby news, and closed wins stay on the same screen so the
-            decision is the line on the chart.
+            The LeChiffre Pine Script indicator runs on the gold chart in
+            TradingView. Entries, the session, nearby news, and closed wins stay
+            on one screen. The source of the indicator is not in this repository.
+            What follows is the working chart, and the paper record further down.
           </p>
-          <figure class="frame">
+          <ul class="checklist">
+            <li>
+              <h3>Heikin Ashi, real fills</h3>
+              <p>The candles are Heikin Ashi. The fill is printed at the real price.</p>
+            </li>
+            <li>
+              <h3>Entries</h3>
+              <p>BUY and SELL marks sit on price, with the trade’s levels readable against the candles.</p>
+            </li>
+            <li>
+              <h3>Session shading</h3>
+              <p>The active window is shaded, including London, so trades stay inside the hours the method uses.</p>
+            </li>
+            <li>
+              <h3>News on the chart</h3>
+              <p>A Forex Factory table lists upcoming items. The visible rows on this screenshot include U.S. unemployment claims and revised consumer sentiment.</p>
+            </li>
+            <li>
+              <h3>Win tags</h3>
+              <p>Closed winners are labeled WIN next to the entry that produced them.</p>
+            </li>
+          </ul>
+          <figure class="shot">
             <img
               src="assets/tradingview-indicator-xauusd.png"
               width="1407"
@@ -122,51 +201,468 @@
               alt="TradingView chart of Gold Spot versus the U.S. Dollar on the 5-minute OANDA feed. The LeChiffre Pine indicator marks buy and sell entries, WIN labels, session shading, and a Forex Factory news table."
             />
             <figcaption>
-              Example chart: XAUUSD, 5-minute, OANDA. Buy and sell entries, WIN
-              tags, session shading, and the news table are on the screenshot.
-              One session of the indicator, not a multi-month audit.
+              XAUUSD, 5-minute, OANDA. One session of the indicator: entries, WIN
+              tags, session shading, and the news table. Not a multi-month audit.
             </figcaption>
           </figure>
-          <ul class="bullets">
-            <li>
-              <h3>Entries</h3>
-              <p>BUY and SELL marks sit on price, with the trade’s levels readable against the candles.</p>
-            </li>
-            <li>
-              <h3>Session filters</h3>
-              <p>The active window is shaded — including the London session — so trades stay inside the hours the method uses.</p>
-            </li>
-            <li>
-              <h3>News awareness</h3>
-              <p>A Forex Factory table on the chart lists upcoming items. The visible rows include U.S. unemployment claims and revised consumer sentiment.</p>
-            </li>
-            <li>
-              <h3>Win tagging</h3>
-              <p>Closed winners are labeled WIN on the chart, next to the entry that produced them.</p>
-            </li>
-          </ul>
         </div>
       </section>
 
-      <section id="tester">
+      <section id="website">
         <div class="wrap">
-          <div class="section-head">
-            <span class="index">02 — Tester</span>
-            <h2>Strategy Tester</h2>
+          <p class="label"><span class="num">03</span> — Website</p>
+          <h2>Lechiffre.online</h2>
+          <div class="split">
+            <div class="prose">
+              <p>
+                <a href="https://lechiffre.online/">https://lechiffre.online/</a>
+                is the public home of the method, hosted on Hostinger, in English
+                and French. The line on the French homepage is
+                <em>LeChiffre ne cligne jamais.</em>
+              </p>
+              <p>
+                The pages are the story, the method, the signal room, the plans,
+                start here, Members &amp; Results, and Markets &amp; News. Members
+                &amp; Results embeds the live results table. Markets &amp; News
+                embeds TradingView widgets and the Forex Factory USD calendar.
+              </p>
+              <p>
+                Member login opens live signals. Visitors see the same room
+                <strong>60 minutes late</strong>, and only the latest 10 signals.
+                Members get every entry as it fires.
+              </p>
+            </div>
+            <div class="paper-card">
+              <p class="num">Plans on the screenshot</p>
+              <h3>$200 once, then $100 or $700</h3>
+              <p>
+                The plans page in this capture shows a one-time setup of
+                <strong>$200</strong>, then <strong>$100 per month</strong> or
+                <strong>$700 per year</strong>, paid with PayPal. Payments on that
+                page are marked final. Prices can change on the live site.
+              </p>
+            </div>
           </div>
+
+          <div class="pair">
+            <figure class="shot">
+              <img
+                src="assets/showcase/website-home-hero.jpg"
+                width="1200"
+                height="900"
+                alt="English homepage of lechiffre.online. Black and red headline: LeChiffre never blinks. Off-white background, red square logo, numbered navigation."
+              />
+              <figcaption>English homepage. Off-white ground, black word, red second line.</figcaption>
+            </figure>
+            <figure class="shot">
+              <img
+                src="assets/showcase/website-fr-hero.jpg"
+                width="1200"
+                height="1250"
+                alt="French homepage of lechiffre.online. Headline LeChiffre ne cligne jamais, with the second line in red, and the opening paragraph of the method."
+              />
+              <figcaption>French homepage header and hero. Same system, the other language.</figcaption>
+            </figure>
+          </div>
+
+          <figure class="shot">
+            <img
+              src="assets/showcase/website-members.jpg"
+              width="1200"
+              height="900"
+              alt="Members and Results on lechiffre.online. Black band with the red word Results, then a table of win rate and net P/L by timeframe on a 0.1 lot."
+            />
+            <figcaption>
+              Members &amp; Results. Closed trades since 31 July 2026. Net P/L is
+              in USD on a 0.1 lot, before spread and commission. The 1M row is the
+              last 30 days of daily summaries and is not inside the All total.
+            </figcaption>
+          </figure>
+
+          <div class="table-scroll">
+            <table>
+              <caption>
+                Figures read from the public Members &amp; Results screenshot above.
+                Net P/L on a 0.1 lot. Past performance does not guarantee future results.
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Timeframe</th>
+                  <th scope="col">Trades</th>
+                  <th scope="col">Win rate</th>
+                  <th scope="col">Net P/L</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1M (30 d)</th>
+                  <td>1,009</td>
+                  <td><span class="meter"><i style="--w: 61.9%"></i>61.9%</span></td>
+                  <td class="pnl">+$5,466</td>
+                </tr>
+                <tr>
+                  <th scope="row">3M</th>
+                  <td>727</td>
+                  <td><span class="meter"><i style="--w: 65.2%"></i>65.2%</span></td>
+                  <td class="pnl">+$8,915</td>
+                </tr>
+                <tr>
+                  <th scope="row">5M</th>
+                  <td>427</td>
+                  <td><span class="meter"><i style="--w: 64.2%"></i>64.2%</span></td>
+                  <td class="pnl">+$7,173</td>
+                </tr>
+                <tr>
+                  <th scope="row">15M</th>
+                  <td>151</td>
+                  <td><span class="meter"><i style="--w: 67.5%"></i>67.5%</span></td>
+                  <td class="pnl">+$4,975</td>
+                </tr>
+                <tr>
+                  <th scope="row">30M</th>
+                  <td>76</td>
+                  <td><span class="meter"><i style="--w: 56.6%"></i>56.6%</span></td>
+                  <td class="pnl">+$2,145</td>
+                </tr>
+                <tr>
+                  <th scope="row">4H</th>
+                  <td>11</td>
+                  <td><span class="meter"><i style="--w: 63.6%"></i>63.6%</span></td>
+                  <td class="pnl">+$1,080</td>
+                </tr>
+                <tr>
+                  <th scope="row">All</th>
+                  <td><strong>1,392</strong></td>
+                  <td><span class="meter"><i style="--w: 64.7%"></i><strong>64.7%</strong></span></td>
+                  <td class="pnl">+$24,288</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="lot">
+            Closed trades since 31 July 2026. P/L in USD on a 0.1 lot, before
+            spread and commission. 1M is the last 30 days of daily summaries and
+            is not in the All total. Past performance does not guarantee future
+            results.
+          </p>
+
+          <div class="pair">
+            <figure class="shot">
+              <img
+                src="assets/showcase/website-plans.jpg"
+                width="1100"
+                height="1085"
+                alt="Plans page on lechiffre.online. One-time setup of 200 dollars, then 100 dollars a month or 700 dollars a year, paid with PayPal."
+              />
+              <figcaption>Plans. Setup once, then monthly or annual. PayPal.</figcaption>
+            </figure>
+            <figure class="shot">
+              <img
+                src="assets/showcase/website-markets.jpg"
+                width="1100"
+                height="978"
+                alt="Markets and News on lechiffre.online. A TradingView XAUUSD chart widget beside a USD economic calendar."
+              />
+              <figcaption>Markets &amp; News. TradingView for XAUUSD, and the USD calendar.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="app">
+        <div class="wrap">
+          <p class="label"><span class="num">04</span> — App</p>
+          <h2>Signals on the phone.</h2>
           <p class="intro">
-            Paper examples of <strong>LeChiffreXtelegram</strong> in TradingView’s
-            Strategy Tester, on a $10,000 account. Timeframes in this set are
-            1-minute, 3-minute, 5-minute, 15-minute, 30-minute, and 4-hour.
-            7-day reports in this set are 1-minute, 3-minute, and 30-minute.
-            5-minute, 15-minute, and 4-hour are the 30-day reports. The stronger
-            30-day results are the 1-minute, 3-minute,
-            5-minute, and 15-minute runs. PnL shown for 0.1 lot size. These are
-            not an audited live brokerage record.
+            The Android app is <strong>v1.0.6</strong>. Google Play closed testing
+            is in progress. This repository does not ship an APK or an app bundle.
+            The same room is on the web at
+            <a href="https://lechiffre-signals.lechiffre.workers.dev/app/">lechiffre-signals.lechiffre.workers.dev/app/</a>.
+          </p>
+          <ul class="checklist">
+            <li>
+              <h3>Tabs, one per timeframe</h3>
+              <p>Live XAUUSD signals with a tab for each timeframe, and a notification switch per timeframe.</p>
+            </li>
+            <li>
+              <h3>BUY and SELL</h3>
+              <p>The buttons open the XAUUSD chart on TradingView. Orders are placed with the member’s own broker. The app does not send the order.</p>
+            </li>
+            <li>
+              <h3>Results</h3>
+              <p>Win rate and net P/L on a 0.1 lot, for Week, Month, and All, with a row per timeframe.</p>
+            </li>
+            <li>
+              <h3>Markets &amp; News</h3>
+              <p>A tab for the chart and the USD calendar, the same job as the website page.</p>
+            </li>
+            <li>
+              <h3>One device per code</h3>
+              <p>A member code unlocks one device. Codes are issued from an admin panel that is not part of this public repository.</p>
+            </li>
+            <li>
+              <h3>Free preview</h3>
+              <p>Visitors see signals 60 minutes late, and only the latest 10. Members get every entry live, with a push when it fires.</p>
+            </li>
+          </ul>
+          <div class="phones">
+            <figure>
+              <img
+                src="assets/showcase/app-signals.jpg"
+                width="540"
+                height="1169"
+                alt="LeChiffre Android app, Signals tab. XAUUSD signal room with green BUY and red SELL buttons, timeframe tabs, and a free preview delayed 60 minutes."
+              />
+              <figcaption>Signals. BUY and SELL open TradingView. Free preview is 60 minutes late.</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="assets/showcase/app-results.jpg"
+                width="480"
+                height="853"
+                alt="LeChiffre app Results screen with Week, Month, and All ranges, win rate, and net P/L by timeframe."
+              />
+              <figcaption>Results. Win rate and net P/L on a 0.1 lot, by Week, Month, and All.</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="assets/showcase/app-timeframes.jpg"
+                width="460"
+                height="1022"
+                alt="LeChiffre app timeframe list with a notification switch for each timeframe from 1 minute through 4 hour."
+              />
+              <figcaption>A notification switch on each timeframe.</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="assets/showcase/app-membership.jpg"
+                width="480"
+                height="853"
+                alt="LeChiffre app membership screen with an empty access-code field. No code is shown."
+              />
+              <figcaption>Membership. One device per code. The field in this shot is empty.</figcaption>
+            </figure>
+          </div>
+          <p class="lot">
+            Net P/L in the app is for a 0.1 lot. Past performance does not
+            guarantee future results.
+          </p>
+        </div>
+      </section>
+
+      <section id="telegram">
+        <div class="wrap">
+          <p class="label"><span class="num">05</span> — Telegram</p>
+          <h2>The bot at the door.</h2>
+          <div class="split">
+            <div class="prose">
+              <p>
+                <a href="https://t.me/LeChiffreOfficialBot">@LeChiffreOfficialBot</a>
+                is the branded front door. The menu opens LeChiffre as a Telegram
+                mini app, and it has buttons for today’s results, USD news, the
+                gold price, pricing, the method, and the risk disclaimer.
+              </p>
+              <p>
+                Language follows the Telegram client: English or French, with a
+                switch on the menu. The bot is Python, using
+                <strong>python-telegram-bot</strong>. It auto-restarts, and it is
+                health-checked every hour. The bot source is not in this
+                repository.
+              </p>
+              <p>
+                The signal channels are separate from the bot menu.
+                <strong>1M</strong>, <strong>3M</strong>, <strong>5M</strong>, and
+                <strong>Fifteen+</strong> (15M, 30M, and 4H) are where the signals
+                are posted. A thread prepares the setup, states the trade, records
+                the result, and closes the day with a summary.
+              </p>
+            </div>
+            <ol class="flow">
+              <li>
+                <span class="step">01</span>
+                <div>
+                  <strong>Pre-entry</strong>
+                  <p>A heads-up before the setup is confirmed.</p>
+                </div>
+              </li>
+              <li>
+                <span class="step">02</span>
+                <div>
+                  <strong>Entry</strong>
+                  <p>Direction, entry, take profit, stop, and risk/reward.</p>
+                </div>
+              </li>
+              <li>
+                <span class="step">03</span>
+                <div>
+                  <strong>Result</strong>
+                  <p>The closed trade on its own card.</p>
+                </div>
+              </li>
+              <li>
+                <span class="step">04</span>
+                <div>
+                  <strong>Daily summary</strong>
+                  <p>Wins, losses, win rate, and net P/L on a 0.1 lot.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <div class="phones">
+            <figure>
+              <img
+                src="assets/showcase/bot-menu-en.jpg"
+                width="460"
+                height="983"
+                alt="Telegram bot LeChiffre welcome menu in English. Headline LeChiffre never blinks, and buttons for results, news, gold, pricing, and the mini app."
+              />
+              <figcaption>English welcome menu. Open LeChiffre launches the mini app.</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="assets/showcase/bot-menu-fr.jpg"
+                width="460"
+                height="983"
+                alt="The same LeChiffre Telegram welcome menu in French."
+              />
+              <figcaption>French menu. The bot follows the client language.</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="assets/showcase/bot-results.jpg"
+                width="460"
+                height="983"
+                alt="Telegram bot showing today's LeChiffre results inside the chat."
+              />
+              <figcaption>Today’s results, from the menu button. P/L on a 0.1 lot.</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="assets/showcase/bot-miniapp.jpg"
+                width="460"
+                height="983"
+                alt="LeChiffre web app opened as a mini app inside Telegram."
+              />
+              <figcaption>The web app, opened inside Telegram.</figcaption>
+            </figure>
+          </div>
+
+          <div class="channel">
+            <figure class="shot">
+              <img
+                src="assets/telegram-5m-lechiffre.png"
+                width="562"
+                height="947"
+                alt="Telegram channel 5M LeChiffre on 22 September 2026. Daily summary, pre-entry alerts, a BUY signal, and a TRADE WON result."
+              />
+              <figcaption>
+                5M LeChiffre, 22 September 2026. Net P/L on a 0.1 lot.
+                <a href="gallery.html">Open the gallery</a>
+              </figcaption>
+            </figure>
+            <div class="example">
+              <h3>Read from this screenshot</h3>
+              <p>
+                Daily summary for 22/09/2026: 10 wins, 2 losses, 12 trades,
+                83.3% win rate, net P/L 414.09, on a 0.1 lot. One confirmed BUY
+                in the same thread, signaled at 06:30 GMT+3 and closed at
+                06:40 GMT+3.
+              </p>
+              <dl>
+                <div>
+                  <dt>Entry</dt>
+                  <dd>4344.649</dd>
+                </div>
+                <div>
+                  <dt>Take profit</dt>
+                  <dd>4347.778</dd>
+                </div>
+                <div>
+                  <dt>Stop</dt>
+                  <dd>4341.520</dd>
+                </div>
+                <div>
+                  <dt>Result</dt>
+                  <dd>TRADE WON · 31.29</dd>
+                </div>
+              </dl>
+              <p class="lot">P/L on a 0.1 lot. An example day, not an audited account.</p>
+            </div>
+          </div>
+
+          <h3 class="subhead">Best-day reports</h3>
+          <p class="intro">
+            Positive daily summaries from the channels. Each card is one example
+            day. Net P/L is for a 0.1 lot.
+          </p>
+          <div class="day-grid">
+            <article class="day-card">
+              <p class="kicker">1M LeChiffre · 21/09/2026</p>
+              <figure class="shot">
+                <img src="assets/telegram/1m-daily-best.png" width="370" height="205" alt="Telegram daily summary for 1M LeChiffre, 21 September 2026. Win rate 65.5 percent, net P/L 414.08 on a 0.1 lot." />
+                <figcaption>36 wins, 19 losses, 55 trades.</figcaption>
+              </figure>
+              <dl class="run-stats">
+                <div><dt>Win rate</dt><dd>65.5%</dd></div>
+                <div><dt>Net P/L</dt><dd class="pnl">414.08</dd></div>
+              </dl>
+            </article>
+            <article class="day-card">
+              <p class="kicker">3M LeChiffre · 18/09/2026</p>
+              <figure class="shot">
+                <img src="assets/telegram/3m-daily-best.png" width="370" height="195" alt="Telegram daily summary for 3M LeChiffre, 18 September 2026. Win rate 66.7 percent, net P/L 63.02 on a 0.1 lot." />
+                <figcaption>10 wins, 5 losses, 15 trades.</figcaption>
+              </figure>
+              <dl class="run-stats">
+                <div><dt>Win rate</dt><dd>66.7%</dd></div>
+                <div><dt>Net P/L</dt><dd class="pnl">63.02</dd></div>
+              </dl>
+            </article>
+            <article class="day-card">
+              <p class="kicker">5M LeChiffre · 21/09/2026</p>
+              <figure class="shot">
+                <img src="assets/telegram/5m-daily-best.png" width="370" height="195" alt="Telegram daily summary for 5M LeChiffre, 21 September 2026. Win rate 66.7 percent, net P/L 143.03 on a 0.1 lot." />
+                <figcaption>8 wins, 4 losses, 12 trades.</figcaption>
+              </figure>
+              <dl class="run-stats">
+                <div><dt>Win rate</dt><dd>66.7%</dd></div>
+                <div><dt>Net P/L</dt><dd class="pnl">143.03</dd></div>
+              </dl>
+            </article>
+            <article class="day-card">
+              <p class="kicker">Fifteen+ · 21/09/2026</p>
+              <figure class="shot">
+                <img src="assets/telegram/fifteen-daily-best.png" width="370" height="195" alt="Telegram daily summary for Fifteen+ LeChiffre, 21 September 2026. Win rate 100 percent, net P/L 403.12 on a 0.1 lot." />
+                <figcaption>4 wins, 0 losses, 4 trades. Fifteen+ covers 15M, 30M, and 4H.</figcaption>
+              </figure>
+              <dl class="run-stats">
+                <div><dt>Win rate</dt><dd>100%</dd></div>
+                <div><dt>Net P/L</dt><dd class="pnl">403.12</dd></div>
+              </dl>
+            </article>
+          </div>
+          <p class="lot">P/L on a 0.1 lot. Example days, not a forecast.</p>
+        </div>
+      </section>
+
+      <section id="record">
+        <div class="wrap">
+          <p class="label"><span class="num">06</span> — Record</p>
+          <h2>Paper runs, labeled as paper.</h2>
+          <p class="intro">
+            These are TradingView Strategy Tester screenshots for
+            <strong>LeChiffreXtelegram</strong>, paper trading, on a $10,000
+            account. They are not the Members &amp; Results table above, and they
+            are not an audited live brokerage account. 7-day reports in this set
+            are 1-minute, 3-minute, and 30-minute. 5-minute, 15-minute, and
+            4-hour are 30-day reports. The stronger 30-day runs are 1-minute,
+            3-minute, 5-minute, and 15-minute. Net P/L is for a
+            <strong>0.1 lot</strong>.
           </p>
           <div class="table-scroll">
-            <table class="matrix">
-              <caption class="lot-note">PnL shown for 0.1 lot size.</caption>
+            <table>
+              <caption>Net P/L on a 0.1 lot. Paper output, not a live audit.</caption>
               <thead>
                 <tr>
                   <th scope="col">Timeframe</th>
@@ -177,303 +673,227 @@
               <tbody>
                 <tr>
                   <th scope="row">1-minute</th>
-                  <td><strong>+$2,168.61</strong> <span class="muted">+21.69% · WR 61.64% (188/305) · PF 1.834 · DD 2.48%</span></td>
-                  <td><strong>+$6,292.17</strong> <span class="muted">+62.92% · WR 60.93% (613/1006) · PF 1.61 · DD 3.55%</span></td>
+                  <td><strong class="pnl">+$2,168.61</strong> <span class="muted">+21.69% · WR 61.64% (188/305) · PF 1.834 · DD 2.48%</span></td>
+                  <td><strong class="pnl">+$6,292.17</strong> <span class="muted">+62.92% · WR 60.93% (613/1006) · PF 1.61 · DD 3.55%</span></td>
                 </tr>
                 <tr>
                   <th scope="row">3-minute</th>
-                  <td><strong>+$713.14</strong> <span class="muted">+7.13% · WR 57.58% (57/99) · PF 1.399 · DD 4.09%</span></td>
-                  <td><strong>+$5,557.94</strong> <span class="muted">+55.58% · WR 64.72% (233/360) · PF 1.96 · DD 2.84%</span></td>
+                  <td><strong class="pnl">+$713.14</strong> <span class="muted">+7.13% · WR 57.58% (57/99) · PF 1.399 · DD 4.09%</span></td>
+                  <td><strong class="pnl">+$5,557.94</strong> <span class="muted">+55.58% · WR 64.72% (233/360) · PF 1.96 · DD 2.84%</span></td>
                 </tr>
                 <tr>
                   <th scope="row">5-minute</th>
-                  <td class="empty">Not in this set</td>
-                  <td><strong>+$3,578.92</strong> <span class="muted">+35.79% · WR 65.42% (140/214) · PF 1.761 · DD 3.24%</span></td>
+                  <td class="muted">Not in this set</td>
+                  <td><strong class="pnl">+$3,578.92</strong> <span class="muted">+35.79% · WR 65.42% (140/214) · PF 1.761 · DD 3.24%</span></td>
                 </tr>
                 <tr>
                   <th scope="row">15-minute</th>
-                  <td class="empty">Not in this set</td>
-                  <td><strong>+$3,149.55</strong> <span class="muted">+31.50% · WR 71.23% (52/73) · PF 2.267 · DD 2.77%</span></td>
+                  <td class="muted">Not in this set</td>
+                  <td><strong class="pnl">+$3,149.55</strong> <span class="muted">+31.50% · WR 71.23% (52/73) · PF 2.267 · DD 2.77%</span></td>
                 </tr>
                 <tr>
                   <th scope="row">30-minute</th>
-                  <td><strong>+$61.17</strong> <span class="muted">+0.61% · WR 54.55% (6/11) · PF 1.093 · DD 5.63%</span></td>
-                  <td><strong>+$1,765.95</strong> <span class="muted">+17.66% · WR 70.59% (24/34) · PF 2.276 · DD 4.84%</span></td>
+                  <td><strong class="pnl">+$61.17</strong> <span class="muted">+0.61% · WR 54.55% (6/11) · PF 1.093 · DD 5.63%</span></td>
+                  <td><strong class="pnl">+$1,765.95</strong> <span class="muted">+17.66% · WR 70.59% (24/34) · PF 2.276 · DD 4.84%</span></td>
                 </tr>
                 <tr>
                   <th scope="row">4-hour</th>
-                  <td class="empty">Not in this set</td>
-                  <td><strong>+$1,478.75</strong> <span class="muted">+14.79% · WR 75.00% (3/4) · PF 3.349 · DD 8.30%</span></td>
+                  <td class="muted">Not in this set</td>
+                  <td><strong class="pnl">+$1,478.75</strong> <span class="muted">+14.79% · WR 75.00% (3/4) · PF 3.349 · DD 8.30%</span></td>
                 </tr>
               </tbody>
             </table>
           </div>
-          <p class="lot-note">PnL shown for 0.1 lot size.</p>
+          <p class="lot">P/L on a 0.1 lot. Past performance does not guarantee future results.</p>
+
           <div class="shot-grid">
             <figure>
-              <p class="kicker">1-minute · 30 days · stronger run</p>
+              <p class="kicker">1-minute · 30 days</p>
               <div class="frame">
-                <img src="assets/strategy/xauusd-1m-30d.png?v=20260922b" width="1024" height="800" alt="Strategy Tester paper report, LeChiffreXtelegram, XAUUSD 1-minute, last 30 days, 10,000 USD. Total PnL +6,292.17 USD, win rate 60.93 percent, profit factor 1.61." />
+                <img src="assets/strategy/xauusd-1m-30d.png" width="1024" height="800" alt="Strategy Tester paper report, LeChiffreXtelegram, XAUUSD 1-minute, last 30 days. Total P/L +6,292.17 USD on a 0.1 lot, win rate 60.93 percent." loading="lazy" />
               </div>
-              <figcaption>+$6,292.17 (+62.92%), drawdown 3.55%, win rate 60.93% (613/1006), profit factor 1.61. PnL shown for 0.1 lot size.</figcaption>
+              <figcaption>+$6,292.17 (+62.92%), drawdown 3.55%, win rate 60.93% (613/1006), profit factor 1.61. 0.1 lot.</figcaption>
             </figure>
             <figure>
-              <p class="kicker">3-minute · 30 days · stronger run</p>
+              <p class="kicker">3-minute · 30 days</p>
               <div class="frame">
-                <img src="assets/strategy/xauusd-3m-30d.png?v=20260922b" width="1024" height="800" alt="Strategy Tester paper report, LeChiffreXtelegram, XAUUSD 3-minute, last 30 days, 10,000 USD. Total PnL +5,557.94 USD, win rate 64.72 percent, profit factor 1.96." />
+                <img src="assets/strategy/xauusd-3m-30d.png" width="1024" height="800" alt="Strategy Tester paper report, XAUUSD 3-minute, last 30 days. Total P/L +5,557.94 USD on a 0.1 lot." loading="lazy" />
               </div>
-              <figcaption>+$5,557.94 (+55.58%), drawdown 2.84%, win rate 64.72% (233/360), profit factor 1.96. PnL shown for 0.1 lot size.</figcaption>
+              <figcaption>+$5,557.94 (+55.58%), drawdown 2.84%, win rate 64.72% (233/360), profit factor 1.96. 0.1 lot.</figcaption>
             </figure>
             <figure>
-              <p class="kicker">5-minute · 30 days · stronger run</p>
+              <p class="kicker">5-minute · 30 days</p>
               <div class="frame">
-                <img src="assets/strategy/xauusd-5m-30d.png?v=20260922b" width="1024" height="800" alt="Strategy Tester paper report, LeChiffreXtelegram, XAUUSD 5-minute, last 30 days, 10,000 USD. Total PnL +3,578.92 USD, win rate 65.42 percent, profit factor 1.761." />
+                <img src="assets/strategy/xauusd-5m-30d.png" width="1024" height="800" alt="Strategy Tester paper report, XAUUSD 5-minute, last 30 days. Total P/L +3,578.92 USD on a 0.1 lot." loading="lazy" />
               </div>
-              <figcaption>+$3,578.92 (+35.79%), drawdown 3.24%, win rate 65.42% (140/214), profit factor 1.761. PnL shown for 0.1 lot size.</figcaption>
+              <figcaption>+$3,578.92 (+35.79%), drawdown 3.24%, win rate 65.42% (140/214), profit factor 1.761. 0.1 lot.</figcaption>
             </figure>
             <figure>
-              <p class="kicker">15-minute · 30 days · stronger run</p>
+              <p class="kicker">15-minute · 30 days</p>
               <div class="frame">
-                <img src="assets/strategy/xauusd-15m-30d.png?v=20260922b" width="1024" height="800" alt="Strategy Tester paper report, LeChiffreXtelegram, XAUUSD 15-minute, last 30 days, 10,000 USD. Total PnL +3,149.55 USD, win rate 71.23 percent, profit factor 2.267." />
+                <img src="assets/strategy/xauusd-15m-30d.png" width="1024" height="800" alt="Strategy Tester paper report, XAUUSD 15-minute, last 30 days. Total P/L +3,149.55 USD on a 0.1 lot." loading="lazy" />
               </div>
-              <figcaption>+$3,149.55 (+31.50%), drawdown 2.77%, win rate 71.23% (52/73), profit factor 2.267. PnL shown for 0.1 lot size.</figcaption>
+              <figcaption>+$3,149.55 (+31.50%), drawdown 2.77%, win rate 71.23% (52/73), profit factor 2.267. 0.1 lot.</figcaption>
             </figure>
             <figure>
               <p class="kicker">30-minute · 30 days</p>
               <div class="frame">
-                <img src="assets/strategy/xauusd-30m-30d.png?v=20260922b" width="1024" height="800" alt="Strategy Tester paper report, LeChiffreXtelegram, XAUUSD 30-minute, last 30 days. Total PnL +1,765.95 USD, win rate 70.59 percent, profit factor 2.276." />
+                <img src="assets/strategy/xauusd-30m-30d.png" width="1024" height="800" alt="Strategy Tester paper report, XAUUSD 30-minute, last 30 days. Total P/L +1,765.95 USD on a 0.1 lot." loading="lazy" />
               </div>
-              <figcaption>+$1,765.95 (+17.66%), drawdown 4.84%, win rate 70.59% (24/34), profit factor 2.276. PnL shown for 0.1 lot size.</figcaption>
+              <figcaption>+$1,765.95 (+17.66%), drawdown 4.84%, win rate 70.59% (24/34), profit factor 2.276. 0.1 lot.</figcaption>
             </figure>
             <figure>
               <p class="kicker">4-hour · 30 days</p>
               <div class="frame">
-                <img src="assets/strategy/xauusd-4h-30d.png?v=20260922b" width="1024" height="800" alt="Strategy Tester paper report, LeChiffreXtelegram, XAUUSD 4-hour, last 30 days. Total PnL +1,478.75 USD, win rate 75 percent, profit factor 3.349." />
+                <img src="assets/strategy/xauusd-4h-30d.png" width="1024" height="800" alt="Strategy Tester paper report, XAUUSD 4-hour, last 30 days. Total P/L +1,478.75 USD on a 0.1 lot." loading="lazy" />
               </div>
-              <figcaption>+$1,478.75 (+14.79%), drawdown 8.30%, win rate 75.00% (3/4), profit factor 3.349. PnL shown for 0.1 lot size.</figcaption>
+              <figcaption>+$1,478.75 (+14.79%), drawdown 8.30%, win rate 75.00% (3/4), profit factor 3.349. 0.1 lot.</figcaption>
             </figure>
             <figure>
               <p class="kicker">1-minute · 7 days</p>
               <div class="frame">
-                <img src="assets/strategy/xauusd-1m-7d.png?v=20260922b" width="1024" height="800" alt="Strategy Tester paper report, LeChiffreXtelegram, XAUUSD 1-minute, last 7 days. Total PnL +2,168.61 USD, win rate 61.64 percent, profit factor 1.834." />
+                <img src="assets/strategy/xauusd-1m-7d.png" width="1024" height="800" alt="Strategy Tester paper report, XAUUSD 1-minute, last 7 days. Total P/L +2,168.61 USD on a 0.1 lot." loading="lazy" />
               </div>
-              <figcaption>+$2,168.61 (+21.69%), drawdown 2.48%, win rate 61.64% (188/305), profit factor 1.834. PnL shown for 0.1 lot size.</figcaption>
+              <figcaption>+$2,168.61 (+21.69%), drawdown 2.48%, win rate 61.64% (188/305), profit factor 1.834. 0.1 lot.</figcaption>
             </figure>
             <figure>
               <p class="kicker">3-minute · 7 days</p>
               <div class="frame">
-                <img src="assets/strategy/xauusd-3m-7d.png?v=20260922b" width="1024" height="800" alt="Strategy Tester paper report, LeChiffreXtelegram, XAUUSD 3-minute, last 7 days. Total PnL +713.14 USD, win rate 57.58 percent, profit factor 1.399." />
+                <img src="assets/strategy/xauusd-3m-7d.png" width="1024" height="800" alt="Strategy Tester paper report, XAUUSD 3-minute, last 7 days. Total P/L +713.14 USD on a 0.1 lot." loading="lazy" />
               </div>
-              <figcaption>+$713.14 (+7.13%), drawdown 4.09%, win rate 57.58% (57/99), profit factor 1.399. PnL shown for 0.1 lot size.</figcaption>
+              <figcaption>+$713.14 (+7.13%), drawdown 4.09%, win rate 57.58% (57/99), profit factor 1.399. 0.1 lot.</figcaption>
             </figure>
             <figure>
               <p class="kicker">30-minute · 7 days</p>
               <div class="frame">
-                <img src="assets/strategy/xauusd-30m-7d.png?v=20260922b" width="1024" height="800" alt="Strategy Tester paper report, LeChiffreXtelegram, XAUUSD 30-minute, last 7 days. Total PnL +61.17 USD, win rate 54.55 percent, profit factor 1.093." />
+                <img src="assets/strategy/xauusd-30m-7d.png" width="1024" height="800" alt="Strategy Tester paper report, XAUUSD 30-minute, last 7 days. Total P/L +61.17 USD on a 0.1 lot." loading="lazy" />
               </div>
-              <figcaption>+$61.17 (+0.61%), drawdown 5.63%, win rate 54.55% (6/11), profit factor 1.093. PnL shown for 0.1 lot size.</figcaption>
+              <figcaption>+$61.17 (+0.61%), drawdown 5.63%, win rate 54.55% (6/11), profit factor 1.093. 0.1 lot.</figcaption>
             </figure>
           </div>
         </div>
       </section>
 
-      <section id="channel">
+      <section id="build" class="band">
         <div class="wrap">
-          <div class="section-head">
-            <span class="index">03 — Signals</span>
-            <h2>Telegram channel</h2>
-          </div>
+          <p class="label"><span class="num">07</span> — Build</p>
+          <h2>From the alert<span class="red">to the phone.</span></h2>
           <p class="intro">
-            <strong>5M LeChiffre</strong> is the XAUUSD 5-minute signal channel.
-            A message prepares the setup, the next one states the trade, a later
-            one records the result, and the daily summary closes the book.
+            A TradingView alert leaves the chart, hits a webhook, and the
+            Cloudflare Worker delivers it. The phone gets a push. The web app
+            updates. Telegram channels carry the signals. The bot is the menu in
+            front of the web app. No addresses, keys, or server source are
+            published here.
           </p>
-          <div class="channel">
-            <figure class="frame">
-              <img
-                src="assets/telegram-5m-lechiffre.png"
-                width="562"
-                height="947"
-                alt="Telegram channel 5M LeChiffre. The thread shows a daily summary for XAUUSD on the 5-minute timeframe, pre-entry alerts, a BUY signal with entry, take profit and stop, and a TRADE WON result."
-              />
-              <figcaption>
-                Example signals from the channel, 22 September 2026.
-                PnL shown for 0.1 lot size.
-                <a href="gallery.html">Open the gallery</a>
-              </figcaption>
-            </figure>
-            <div>
-              <ol class="flow">
-                <li>
-                  <span class="step">01</span>
-                  <div>
-                    <strong>Pre-entry</strong>
-                    <p>A heads-up before the setup is confirmed. This thread shows both a pre-entry buy and a pre-entry sell on XAUUSD 5-minute.</p>
-                  </div>
-                </li>
-                <li>
-                  <span class="step">02</span>
-                  <div>
-                    <strong>Entry</strong>
-                    <p>The confirmed signal names the direction and prints entry, take profit, stop, and risk/reward.</p>
-                  </div>
-                </li>
-                <li>
-                  <span class="step">03</span>
-                  <div>
-                    <strong>Result</strong>
-                    <p>The closed trade is posted on its own card. In this example the card reads TRADE WON.</p>
-                  </div>
-                </li>
-                <li>
-                  <span class="step">04</span>
-                  <div>
-                    <strong>Daily summary</strong>
-                    <p>Wins, losses, total trades, win rate, and net PnL for that day’s XAUUSD 5-minute book.</p>
-                  </div>
-                </li>
-              </ol>
-              <div class="example">
-                <h3>Read from this screenshot</h3>
-                <p>
-                  Daily summary for 22/09/2026: 10 wins, 2 losses, 12 trades,
-                  83.3% win rate, net PnL 414.09. PnL shown for 0.1 lot size.
-                  One confirmed BUY in the same thread, signaled at 06:30 GMT+3
-                  and closed at 06:40 GMT+3.
-                </p>
-                <dl>
-                  <div>
-                    <dt>Entry</dt>
-                    <dd>4344.649</dd>
-                  </div>
-                  <div>
-                    <dt>Take profit</dt>
-                    <dd>4347.778</dd>
-                  </div>
-                  <div>
-                    <dt>Stop</dt>
-                    <dd>4341.520</dd>
-                  </div>
-                  <div>
-                    <dt>Result</dt>
-                    <dd>TRADE WON · 31.29</dd>
-                  </div>
-                </dl>
-                <p class="lot-note">PnL shown for 0.1 lot size.</p>
-              </div>
-            </div>
-          </div>
-
-          <h3 class="subhead">Best day reports</h3>
-          <p class="intro">
-            Positive daily summaries from the LeChiffre Telegram channels.
-            Each card is one example day. PnL shown for 0.1 lot size.
-          </p>
-          <div class="day-grid">
-            <article class="day-card">
-              <p class="kicker">1M LeChiffre · 21/09/2026</p>
-              <figure class="frame">
-                <img src="assets/telegram/1m-daily-best.png" width="370" height="205" alt="Telegram daily summary for 1M LeChiffre, XAUUSD 1-minute, 21 September 2026. Win rate 65.5 percent, net PnL 414.08." />
-                <figcaption>36 wins, 19 losses, 55 trades. PnL shown for 0.1 lot size.</figcaption>
-              </figure>
-              <dl class="run-stats">
-                <div><dt>Win rate</dt><dd>65.5%</dd></div>
-                <div><dt>Net PnL</dt><dd>414.08</dd></div>
-              </dl>
-              <p class="lot-note">PnL shown for 0.1 lot size.</p>
+          <p class="arch-kicker">Signal pipeline</p>
+          <ol class="pipe">
+            <li class="card">
+              <span class="num">01</span>
+              <h3>TradingView</h3>
+              <p>Pine Script on a Heikin Ashi XAUUSD chart. When the rules hit, an alert fires.</p>
+            </li>
+            <li class="card">
+              <span class="num">02</span>
+              <h3>Webhook</h3>
+              <p>The alert is delivered to the signal server. The address stays off this public page.</p>
+            </li>
+            <li class="card">
+              <span class="num">03</span>
+              <h3>Cloudflare Worker</h3>
+              <p>The Worker is the server in the middle. It fans the signal out to the phone and the web app.</p>
+            </li>
+          </ol>
+          <div class="aside-grid">
+            <article class="card">
+              <span class="num">04</span>
+              <h3>Android push</h3>
+              <p>A notification for the timeframes the member turned on. v1.0.6, Google Play closed testing.</p>
             </article>
-            <article class="day-card">
-              <p class="kicker">3M LeChiffre · 18/09/2026</p>
-              <figure class="frame">
-                <img src="assets/telegram/3m-daily-best.png" width="370" height="195" alt="Telegram daily summary for 3M LeChiffre, XAUUSD 3-minute, 18 September 2026. Win rate 66.7 percent, net PnL 63.02." />
-                <figcaption>10 wins, 5 losses, 15 trades. PnL shown for 0.1 lot size.</figcaption>
-              </figure>
-              <dl class="run-stats">
-                <div><dt>Win rate</dt><dd>66.7%</dd></div>
-                <div><dt>Net PnL</dt><dd>63.02</dd></div>
-              </dl>
-              <p class="lot-note">PnL shown for 0.1 lot size.</p>
-            </article>
-            <article class="day-card">
-              <p class="kicker">5M LeChiffre · 21/09/2026</p>
-              <figure class="frame">
-                <img src="assets/telegram/5m-daily-best.png" width="370" height="195" alt="Telegram daily summary for 5M LeChiffre, XAUUSD 5-minute, 21 September 2026. Win rate 66.7 percent, net PnL 143.03." />
-                <figcaption>8 wins, 4 losses, 12 trades. PnL shown for 0.1 lot size.</figcaption>
-              </figure>
-              <dl class="run-stats">
-                <div><dt>Win rate</dt><dd>66.7%</dd></div>
-                <div><dt>Net PnL</dt><dd>143.03</dd></div>
-              </dl>
-              <p class="lot-note">PnL shown for 0.1 lot size.</p>
-            </article>
-            <article class="day-card">
-              <p class="kicker">Fifteen+ LeChiffre · 21/09/2026</p>
-              <figure class="frame">
-                <img src="assets/telegram/fifteen-daily-best.png" width="370" height="195" alt="Telegram daily summary for Fifteen+ LeChiffre, XAUUSD 15-minute, 21 September 2026. Win rate 100 percent, net PnL 403.12." />
-                <figcaption>4 wins, 0 losses, 4 trades. PnL shown for 0.1 lot size.</figcaption>
-              </figure>
-              <dl class="run-stats">
-                <div><dt>Win rate</dt><dd>100%</dd></div>
-                <div><dt>Net PnL</dt><dd>403.12</dd></div>
-              </dl>
-              <p class="lot-note">PnL shown for 0.1 lot size.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="site">
-        <div class="wrap">
-          <div class="section-head">
-            <span class="index">04 — Site</span>
-            <h2>lechiffre.online</h2>
-          </div>
-          <div class="site-panel">
-            <div>
-              <p class="kicker">Public home of the method</p>
-              <h3>Rules, signals, and the chart in one place.</h3>
+            <article class="card">
+              <span class="num">05</span>
+              <h3>Web app</h3>
               <p>
-                <a href="https://lechiffre.online/">https://lechiffre.online/</a>
-                is the site Elie built for the method: the rules, the signal
-                room, and the custom TradingView indicator. The GitHub profile
-                for this repository already points there.
+                The same signal in the browser:
+                <a href="https://lechiffre-signals.lechiffre.workers.dev/app/">lechiffre-signals.lechiffre.workers.dev/app/</a>
               </p>
-              <div class="actions">
-                <a class="button button-primary" href="https://lechiffre.online/">Visit lechiffre.online</a>
-              </div>
-            </div>
-            <ul class="site-list">
-              <li>The method, kept short enough to follow without a new indicator every week.</li>
-              <li>Signal room: pre-entry first, then a confirmed signal with instrument, direction, entry, stop, and target.</li>
-              <li>The custom LeChiffre indicator on XAUUSD, plus a TradingView setup guide.</li>
-              <li>Gold mechanics — pips, lot size, and the four sessions — and a written risk disclosure.</li>
-            </ul>
+            </article>
+          </div>
+          <p class="arch-kicker">Telegram</p>
+          <div class="aside-grid">
+            <article class="card">
+              <span class="num">06</span>
+              <h3>Channels</h3>
+              <p>Signals are posted to 1M, 3M, 5M, and Fifteen+ LeChiffre. Fifteen+ is 15M, 30M, and 4H.</p>
+            </article>
+            <article class="card">
+              <span class="num">07</span>
+              <h3>Bot</h3>
+              <p>
+                <a href="https://t.me/LeChiffreOfficialBot">@LeChiffreOfficialBot</a>
+                is Python (python-telegram-bot). The menu opens the web app as a
+                mini app. Auto-restart, hourly health check.
+              </p>
+            </article>
+          </div>
+          <div class="aside-grid">
+            <article class="card">
+              <span class="num">Kept out</span>
+              <h3>Not in this repo</h3>
+              <p>
+                No indicator source, bot source, or Worker source. No member
+                codes, no admin panel, no webhook address, no signing keys, no
+                APK or app bundle.
+              </p>
+            </article>
+            <article class="card">
+              <span class="num">Contact</span>
+              <h3>Support</h3>
+              <p>
+                <a href="mailto:support@lechiffre.online">support@lechiffre.online</a>
+                · <a href="https://lechiffre.online/">lechiffre.online</a>
+              </p>
+            </article>
           </div>
         </div>
       </section>
     </main>
 
-    <aside class="note">
-      <div>
-        Not financial advice. Trading gold, futures, and foreign exchange can
-        lose money and is not suitable for every person. The Strategy Tester
-        grid is paper output for LeChiffreXtelegram on a $10,000 account, for
-        the 7-day and 30-day windows in the screenshots. The Telegram cards are
-        example days, including the best-day summaries shown above. None of this
-        is an audited live brokerage record or a forecast. PnL shown for 0.1 lot size. Past results do not indicate
-        future results.
-      </div>
-    </aside>
-
     <footer class="site-footer">
-      <div class="foot">
+      <div class="wrap foot">
         <div>
-          Elie Minassian ·
-          <a href="mailto:minassianelie@gmail.com">minassianelie@gmail.com</a>
-          ·
-          <a href="https://github.com/e-mination">github.com/e-mination</a>
+          <p class="label"><span class="num">08</span> — Index</p>
+          <nav class="foot-nav" aria-label="Footer">
+            <a href="#story">01 Story</a>
+            <a href="#method">02 Method</a>
+            <a href="#website">03 Website</a>
+            <a href="#app">04 App</a>
+            <a href="#telegram">05 Telegram</a>
+            <a href="#record">06 Record</a>
+            <a href="#build">07 Build</a>
+            <a href="gallery.html">Gallery</a>
+          </nav>
         </div>
-        <div>Site source under the MIT License · © 2026</div>
+        <div>
+          <p class="label"><span class="num">Risk</span> — Read this</p>
+          <p>
+            Not financial advice. Trading gold, futures, and foreign exchange can
+            lose money and is not suitable for every person. Every P/L figure on
+            this portfolio is quoted on a <strong>0.1 lot</strong>. The Members
+            &amp; Results table is the public table on lechiffre.online for closed
+            trades since 31 July 2026, before spread and commission. The Strategy
+            Tester grid is paper output for LeChiffreXtelegram on a $10,000
+            account. The Telegram cards are example days. None of this is an
+            audited live brokerage record or a forecast. Past performance does
+            not guarantee future results.
+          </p>
+        </div>
+      </div>
+      <div class="wrap legal">
+        <span>Elie Minassian</span>
+        <a href="mailto:support@lechiffre.online">support@lechiffre.online</a>
+        <a href="https://github.com/e-mination">github.com/e-mination</a>
+        <a href="https://lechiffre.online/">lechiffre.online</a>
+        <span>Site source under the MIT License · Fonts under the SIL OFL · © 2026</span>
       </div>
     </footer>
   </body>
