@@ -42,7 +42,7 @@ flowchart TD
 
 TradingView fires the alert. A webhook delivers it to a Cloudflare Worker. The Worker pushes the phone and updates the web app. The same method’s signals are posted to the Telegram channels. The bot is a separate Python process (`python-telegram-bot`): branded menu, today’s results, USD news, gold price, English and French, and an **Open LeChiffre** button that launches the web app inside Telegram. It auto-restarts and is health-checked every hour.
 
-The Pages site draws the same path in the **07 — Build** section.
+The live portfolio draws the same path in the **07 — Build** section.
 
 ## 01 — Story
 
