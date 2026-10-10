@@ -107,7 +107,7 @@ P/L on a 0.1 lot. Past performance does not guarantee future results. This table
 - A member code works on **one device**. Codes are issued from an admin panel that is not linked from this repository
 - Free preview: signals 60 minutes late, latest 10 only. Members get every entry live, with a push when it fires
 
-![App Signals screen with BUY and SELL](assets/showcase/app-signals.jpg)
+![App 1.0.23 Signals on XAUUSD with the pair switcher, demo data](assets/app-v1.0.23/signals-xauusd.jpg)
 
 ### v1.0.23 screens
 
@@ -232,7 +232,6 @@ LICENSE                    MIT, for this site’s source
 | `assets/showcase/website-home-hero.jpg` | English homepage |
 | `assets/showcase/website-plans.jpg` | Plans |
 | `assets/showcase/website-markets.jpg` | Markets & News |
-| `assets/showcase/app-signals.jpg` | App Signals, with BUY and SELL |
 | `assets/showcase/bot-menu-en.jpg` | Telegram bot welcome menu |
 | `assets/app-v1.0.23/` | App 1.0.23 (demo data): Signals and Results per pair, 1H tab, Performance Today, Notify me grid per pair |
 | `assets/tradingview-indicator-xauusd.png` | Pine indicator on XAUUSD, 5-minute |
