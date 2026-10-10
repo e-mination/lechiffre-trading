@@ -1,6 +1,6 @@
 # LeChiffre — never blinks
 
-Public portfolio for **Elie Minassian** ([e-mination](https://github.com/e-mination)): a rules-based **XAUUSD** method, the site [lechiffre.online](https://lechiffre.online/), the Android app, and the Telegram bot [@LeChiffreOfficialBot](https://t.me/LeChiffreOfficialBot).
+Public portfolio for **Elie Minassian** ([e-mination](https://github.com/e-mination)): a rules-based **XAUUSD** method (now also live on **BTCUSD**), the site [lechiffre.online](https://lechiffre.online/), the Android app, and the Telegram bot [@LeChiffreOfficialBot](https://t.me/LeChiffreOfficialBot).
 
 The method is drawn in **TradingView Pine Script** on Heikin Ashi charts, with fills at the real price. Signals run on **1M, 3M, 5M, 15M, 30M, 1H, and 4H**. They are posted to Telegram channels for **1M**, **3M**, **5M**, and **Fifteen+ LeChiffre** (15M, 30M, and 4H). Membership is paid monthly or annually.
 
@@ -27,20 +27,21 @@ The repository homepage is [lechiffre.online](https://lechiffre.online/), the me
 flowchart TD
   TV["TradingView\nPine Script alert · XAUUSD\nHeikin Ashi · fill at real price"]
   WH["Webhook\naddress not published"]
-  CW["Cloudflare Worker\nsignal server"]
-  PH["Android push\napp v1.0.6"]
-  WEB["Web app\nlechiffre-signals.lechiffre.workers.dev/app/"]
+  CW["Cloudflare Worker 1.12.x\nsignal server · per-pair feeds"]
+  PH["Android push\napp v1.0.23"]
+  WEB["Web app 1.0.23-web\nlechiffre-signals.lechiffre.workers.dev/app/\nXAUUSD · BTCUSD"]
   CH["Telegram channels\n1M · 3M · 5M · Fifteen+\nFifteen+ = 15M, 30M, 4H"]
-  BOT["Telegram bot\n@LeChiffreOfficialBot\nPython · auto-restart · hourly health check"]
+  BOT["Telegram bot\n@LeChiffreOfficialBot\nWorker webhook · pair picker"]
 
   TV --> WH --> CW
   CW --> PH
   CW --> WEB
   TV --> CH
   BOT -->|"mini app"| WEB
+  CW -->|"menus · signals · results"| BOT
 ```
 
-TradingView fires the alert. A webhook delivers it to a Cloudflare Worker. The Worker pushes the phone and updates the web app. The same method’s signals are posted to the Telegram channels. The bot is a separate Python process (`python-telegram-bot`): branded menu, today’s results, USD news, gold price, English and French, and an **Open LeChiffre** button that launches the web app inside Telegram. It auto-restarts and is health-checked every hour.
+TradingView fires the alert. A webhook delivers it to a Cloudflare Worker. The Worker pushes the phone and updates the web app. The same method’s signals are posted to the Telegram channels. Since worker 1.12.1 the bot menu is served by the same Cloudflare Worker (Telegram webhook): a pair picker (XAUUSD · BTCUSD), then signals, results, price, and USD news for that pair, in English and French, and an **Open LeChiffre** button that launches the web app inside Telegram. The earlier Python process (`python-telegram-bot`) is kept off as a fallback.
 
 The live portfolio draws the same path in the **07 — Build** section.
 
@@ -90,19 +91,37 @@ P/L on a 0.1 lot. Past performance does not guarantee future results. This table
 
 ## 04 — Android app
 
-**v1.0.6.** Google Play closed testing is in progress. No APK or app bundle is attached here. The web build of the same room:
+**v1.0.23** (web **1.0.23-web**, server **worker 1.12.x**). Google Play closed testing is in progress. No APK or app bundle is attached here. The web build of the same room:
 
 **https://lechiffre-signals.lechiffre.workers.dev/app/**
 
-- Live XAUUSD signals, one tab per timeframe
-- A notification switch per timeframe
-- **BUY** and **SELL** open the XAUUSD chart on TradingView. Orders are placed with the member’s own broker
-- Results: win rate and net P/L on a **0.1 lot**, for Week, Month, and All
+- Two live pairs: **XAUUSD** and **BTCUSD**. The pair in the Signals and Results heading is the switcher: **‹ XAUUSD ›**. Tap the arrows or the pair name. “Other” pairs join only once the server switches them on
+- Timeframe tabs **All, 1M, 3M, 5M, 15M, 30M, 1H, 4H** (1H added in 1.0.22)
+- Everything follows the selected pair: running trades, Today, Performance, history, Results, live price, and the TradingView / MT5 buttons
+- **Performance** table: **Today** · Week · Month · All history. Today counts from 00:00 on the member’s device
+- **Notify me**: one grid per pair, **Pre-entry · Signal · Result** for each timeframe, plus USD news 30 min and 5 min before. One pair’s grid on screen at a time, with the same **‹ XAUUSD ›** switcher
+- Notification titles carry the pair and timeframe, e.g. “Buy XAUUSD 5 min TF”, “Result Win BTCUSD 15 min TF”. Entry, SL, and TP stay inside the app
+- **BUY** and **SELL** open the chart on TradingView (OANDA:XAUUSD or BITSTAMP:BTCUSD) or MT5. Orders are placed with the member’s own broker
+- Results: win rate and net P/L on a **0.1 lot** (10 oz on XAUUSD, 0.1 BTC on BTCUSD), for Today, 7 days, 30 days, All, and a custom range
 - Markets & News tab
 - A member code works on **one device**. Codes are issued from an admin panel that is not linked from this repository
 - Free preview: signals 60 minutes late, latest 10 only. Members get every entry live, with a push when it fires
 
 ![App Signals screen with BUY and SELL](assets/showcase/app-signals.jpg)
+
+### v1.0.23 screens
+
+Rendered from the 1.0.23 web build in **demo mode** (sample trades, not LeChiffre’s real results).
+
+| Signals · XAUUSD | Signals · BTCUSD | 1H tab | Performance · Today |
+| --- | --- | --- | --- |
+| ![Signals with the XAUUSD pair switcher](assets/app-v1.0.23/signals-xauusd.jpg) | ![Signals switched to BTCUSD](assets/app-v1.0.23/signals-btcusd.jpg) | ![Signals on the 1H timeframe tab](assets/app-v1.0.23/signals-1h.jpg) | ![Performance table on the Today range](assets/app-v1.0.23/performance-today.jpg) |
+
+| Results · XAUUSD | Results · BTCUSD | Notify me · XAUUSD | Notify me · BTCUSD |
+| --- | --- | --- | --- |
+| ![Results for XAUUSD](assets/app-v1.0.23/results-xauusd.jpg) | ![Results for BTCUSD on a 0.1 BTC lot](assets/app-v1.0.23/results-btcusd.jpg) | ![Notify me grid for XAUUSD](assets/app-v1.0.23/notify-xauusd.jpg) | ![Notify me grid for BTCUSD](assets/app-v1.0.23/notify-btcusd.jpg) |
+
+Release notes: [CHANGELOG.md](CHANGELOG.md).
 
 P/L on a 0.1 lot. Past performance does not guarantee future results.
 
@@ -113,10 +132,11 @@ Bot: [t.me/LeChiffreOfficialBot](https://t.me/LeChiffreOfficialBot)
 ![Telegram bot welcome menu](assets/showcase/bot-menu-en.jpg)
 
 - Branded menu, English and French from the client language
+- **Pair picker** (worker 1.12.1–1.12.3): first visit shows **XAUUSD · Gold** and **BTCUSD · Bitcoin**. After that, one **🔁 Change pair → <next>** button cycles the pairs, and the last pair is remembered per chat
+- Per pair: Signals (public feed, members-only signals counted as locked), Results, price (BTCUSD marked “open 24/7”), USD news
+- Commands `/pair`, `/xauusd`, `/btcusd`, `/gold`, `/btc`; `/results`, `/signals`, `/price`, `/news` use the last pair
 - **Open LeChiffre** mini app (the web app, inside Telegram)
-- Today’s results, USD news, gold price
-- Python, `python-telegram-bot`
-- Auto-restart and an hourly health check
+- Served by the Cloudflare Worker (Telegram webhook). The earlier Python process is kept off as a fallback
 - Bot source is not in this repository
 
 ### Channels
@@ -193,6 +213,8 @@ index.html                 Portfolio
 gallery.html               Screenshot gallery
 css/styles.css             Styles, matched to lechiffre.online
 assets/showcase/           Website, app, and bot screenshots
+assets/app-v1.0.23/        App 1.0.23 screens: pair switcher, 1H, Performance Today, Notify me
+CHANGELOG.md               Product release notes (app, web, worker, Telegram bot)
 assets/fonts/              Archivo and IBM Plex Mono (SIL OFL)
 assets/strategy/           Strategy Tester paper screenshots
 assets/telegram/           Best-day channel summaries
@@ -212,6 +234,7 @@ LICENSE                    MIT, for this site’s source
 | `assets/showcase/website-markets.jpg` | Markets & News |
 | `assets/showcase/app-signals.jpg` | App Signals, with BUY and SELL |
 | `assets/showcase/bot-menu-en.jpg` | Telegram bot welcome menu |
+| `assets/app-v1.0.23/` | App 1.0.23 (demo data): Signals and Results per pair, 1H tab, Performance Today, Notify me grid per pair |
 | `assets/tradingview-indicator-xauusd.png` | Pine indicator on XAUUSD, 5-minute |
 | `assets/strategy/` | Strategy Tester paper grid |
 | `assets/telegram/` | Best-day summaries: 1M, 3M, 5M, Fifteen+ |

@@ -92,7 +92,7 @@
             <a href="#app">
               <span class="n">04</span>
               <strong>Android app</strong>
-              <small>v1.0.6 · closed testing</small>
+              <small>v1.0.23 · XAUUSD · BTCUSD</small>
             </a>
           </li>
           <li>
@@ -374,7 +374,7 @@
           <p class="label"><span class="num">04</span> — App</p>
           <h2>Signals on the phone.</h2>
           <p class="intro">
-            The Android app is <strong>v1.0.6</strong>. Google Play closed testing
+            The Android app is <strong>v1.0.23</strong>, live on <strong>XAUUSD and BTCUSD</strong>. Google Play closed testing
             is in progress. This repository does not ship an APK or an app bundle.
             The same room is on the web at
             <a href="https://lechiffre-signals.lechiffre.workers.dev/app/">lechiffre-signals.lechiffre.workers.dev/app/</a>.
@@ -464,9 +464,9 @@
               </p>
               <p>
                 Language follows the Telegram client: English or French, with a
-                switch on the menu. The bot is Python, using
-                <strong>python-telegram-bot</strong>. It auto-restarts, and it is
-                health-checked every hour. The bot source is not in this
+                switch on the menu. The bot now runs inside the Cloudflare Worker
+                (Telegram webhook), with a <strong>pair picker</strong>: XAUUSD or
+                BTCUSD, then one “Change pair” button to cycle. The bot source is not in this
                 repository.
               </p>
               <p>
@@ -807,7 +807,7 @@
             <article class="card">
               <span class="num">04</span>
               <h3>Android push</h3>
-              <p>A notification for the timeframes the member turned on. v1.0.6, Google Play closed testing.</p>
+              <p>A notification for the timeframes the member turned on. v1.0.23, titles carry the pair: “Buy XAUUSD 5 min TF”.</p>
             </article>
             <article class="card">
               <span class="num">05</span>
@@ -830,8 +830,8 @@
               <h3>Bot</h3>
               <p>
                 <a href="https://t.me/LeChiffreOfficialBot">@LeChiffreOfficialBot</a>
-                is Python (python-telegram-bot). The menu opens the web app as a
-                mini app. Auto-restart, hourly health check.
+                runs on the Cloudflare Worker (Telegram webhook). Pair picker
+                XAUUSD · BTCUSD. The menu opens the web app as a mini app.
               </p>
             </article>
           </div>
