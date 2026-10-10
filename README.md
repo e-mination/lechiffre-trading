@@ -8,6 +8,12 @@ The method is drawn in **TradingView Pine Script** on Heikin Ashi charts, with f
 
 This repository is a showcase. It keeps the earlier Pine chart, Strategy Tester paper runs, and Telegram channel cards, and puts them next to the website, the app, and the bot. It does not contain indicator source, bot source, server source, member codes, an admin panel, webhook addresses, signing keys, or an APK.
 
+| Signals · XAUUSD | Signals · BTCUSD | Results · XAUUSD | Notify me · XAUUSD |
+| --- | --- | --- | --- |
+| ![LeChiffre app 1.0.23, Signals on XAUUSD with the pair switcher, demo data](assets/app-v1.0.23/signals-xauusd.jpg) | ![Signals switched to BTCUSD](assets/app-v1.0.23/signals-btcusd.jpg) | ![Results for XAUUSD on a 0.1 lot](assets/app-v1.0.23/results-xauusd.jpg) | ![Notify me grid for XAUUSD](assets/app-v1.0.23/notify-xauusd.jpg) |
+
+App 1.0.23 (web 1.0.23-web), demo mode: sample trades, not real results.
+
 ## Links
 
 | | |
@@ -129,7 +135,7 @@ P/L on a 0.1 lot. Past performance does not guarantee future results.
 
 Bot: [t.me/LeChiffreOfficialBot](https://t.me/LeChiffreOfficialBot)
 
-![Telegram bot welcome menu](assets/showcase/bot-menu-en.jpg)
+![Open LeChiffre in the bot launches the 1.0.23 web app, here on BTCUSD, demo data](assets/app-v1.0.23/signals-btcusd.jpg)
 
 - Branded menu, English and French from the client language
 - **Pair picker** (worker 1.12.1–1.12.3): first visit shows **XAUUSD · Gold** and **BTCUSD · Bitcoin**. After that, one **🔁 Change pair → <next>** button cycles the pairs, and the last pair is remembered per chat
@@ -212,7 +218,7 @@ Plain HTML, CSS, and images at the repository root. [`.nojekyll`](.nojekyll) is 
 index.html                 Portfolio
 gallery.html               Screenshot gallery
 css/styles.css             Styles, matched to lechiffre.online
-assets/showcase/           Website, app, and bot screenshots
+assets/showcase/           Website and bot screenshots, Open Graph card
 assets/app-v1.0.23/        App 1.0.23 screens: pair switcher, 1H, Performance Today, Notify me
 CHANGELOG.md               Product release notes (app, web, worker, Telegram bot)
 assets/fonts/              Archivo and IBM Plex Mono (SIL OFL)
@@ -232,7 +238,8 @@ LICENSE                    MIT, for this site’s source
 | `assets/showcase/website-home-hero.jpg` | English homepage |
 | `assets/showcase/website-plans.jpg` | Plans |
 | `assets/showcase/website-markets.jpg` | Markets & News |
-| `assets/showcase/bot-menu-en.jpg` | Telegram bot welcome menu |
+| `assets/showcase/bot-results.jpg` | Today’s results inside the Telegram bot |
+| `assets/showcase/app-signals.jpg`, `app-results.jpg`, `app-timeframes.jpg`, `bot-miniapp.jpg` | Legacy file names, now the 1.0.23 Signals XAUUSD, Results XAUUSD, 1H, and Signals XAUUSD screens |
 | `assets/app-v1.0.23/` | App 1.0.23 (demo data): Signals and Results per pair, 1H tab, Performance Today, Notify me grid per pair |
 | `assets/tradingview-indicator-xauusd.png` | Pine indicator on XAUUSD, 5-minute |
 | `assets/strategy/` | Strategy Tester paper grid |
